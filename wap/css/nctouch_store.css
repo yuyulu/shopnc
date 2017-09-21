@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* ================================ */
+/* 触屏版店铺样式类型					*/
+/* by 33h - a-o.com v  5                  */
+/* ================================ */
+
+
+/*店铺首页头部特征*/
+.nctouch-store-header { position: fixed; z-index: 4; top: 0; right: 0; left: 0;}
+.nctouch-store-header .header-inp { margin: 0.275rem 3.8rem 0 2rem;}
+.nctouch-store-header .header-r a { padding: 0.5rem 0.6rem 0.5rem 0.2rem;}
+.nctouch-store-header .header-r a.store-categroy { width: 1.275rem; height: 1.575rem; padding: 0.2rem 0.4rem 0.2rem 0.1rem;}
+.nctouch-store-header .header-r a.store-categroy i  { width: 100%; background-image: url(../images/stiore_categroy_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%; opacity: 0.60;}
+
+/*店铺首页上部*/
+.nctouch-store-top { position: relative; z-index: 1; width: 100%; height: 4.5rem;}
+.nctouch-store-top .store-top-bg { position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
+.nctouch-store-top .store-top-bg .img { display: block; width: 100%; height: 100%; background-position: 50% 50%; background-size: cover;}
+.nctouch-store-top .store-top-mask { position: absolute; z-index: 2; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,0.25);}
+.nctouch-store-top .store-avatar { position: absolute; z-index: 3; bottom: 0.2rem; left: 0.2rem; display: block; width: 2.5rem; height: 2.5rem; }
+.nctouch-store-top .store-avatar img { width: 100%; height: 100%; border-radius: 0.3rem;}
+.nctouch-store-top .store-name { position: absolute; z-index: 3; top: 2.5rem; left: 3rem; width: 8rem; font-size: 0.7rem; color: #FFF; text-shadow: 0.05rem 0.05rem 0 rgba(0,0,0,0.75);}
+.nctouch-store-top .store-favorate { position: absolute; z-index: 3; bottom: 0.5rem; right: 0; display: block; width: 5rem; height: 1.6rem; text-align: center;}
+.nctouch-store-top .store-favorate a { display: inline-block; vertical-align: bottom; width: 50%; height: 0.9rem; padding: 0.4rem 0; background-color: #ED5564; font-size: 0.6rem; line-height: 0.9rem; color: #FFF;}
+.nctouch-store-top .store-favorate a.added { background-color: #333;}
+.nctouch-store-top .store-favorate span { display: inline-block; vertical-align: bottom; width: 50%; height: 1.2rem; padding: 0.25rem 0; background-color: #DB4453; font-size: 0.55rem; line-height: 0.6rem; color: #FFF;}
+
+.nctouch-store-nav { height: 2.55rem;}
+.nctouch-store-nav ul li { width: 25%; height: 2.55rem;}
+.nctouch-store-nav ul li a { line-height: 1.25rem; font-size: 0.55rem;}
+.nctouch-store-nav ul li a i { display: block; width: 0.8rem; height: 0.9rem; vertical-align: auto; margin: 0.3rem auto 0 auto; background-size: 100%; }
+.nctouch-store-nav ul li a i.store { background-image: url(../images/store_r.png);}
+.nctouch-store-nav ul li a i.goods { background-image: url(../images/goods_r.png); background-size: 90%;}
+.nctouch-store-nav ul li a i.new { background-image: url(../images/new_r.png);}
+.nctouch-store-nav ul li a i.sale { background-image: url(../images/sale_r.png);}
+
+/*店铺介绍*/
+.nctouch-store-info { position: relative; z-index: 1; display: block; background: #FFF; padding: 0.5rem;}
+.nctouch-store-info .store-avatar { display: inline-block; vertical-align: top; width: 2.8rem; height: 2.8rem; padding: 0.1rem; border: solid 0.05rem #EEE; border-radius: 0.2rem;}
+.nctouch-store-info .store-avatar img { width: 100%; height: 100%; border-radius: 0.15rem;}
+.nctouch-store-info .store-base { display: inline-block; margin-left: 0.5rem;}
+.nctouch-store-info .store-base dt { display: block; height: 0.9rem; margin-bottom: 0.2rem; font-size: 0.7rem; line-height: 0.9rem;}
+.nctouch-store-info .store-base dd.class { display: block; height: 0.9rem; font-size: 0.55rem; line-height: 0.9rem; color: #555;}
+.nctouch-store-info .store-base dd.type { display: inline-block; height: 0.9rem; padding: 0 0.2rem; font-size: 0.55rem; line-height: 0.9rem; background-color: #ED5564; color: #FFF; border-radius: 0.15rem;}
+.nctouch-store-info .store-collect { position: absolute; z-index: 1; top: 1.2rem; right: 0.8rem; text-align: center;}
+.nctouch-store-info .store-collect a { display: block; background-color: #F5F5F5; height: 0.9rem; padding: 0.2rem 0.5rem; border: solid #EEE 0.05rem; font-size: 0.55rem; line-height: 0.9rem; color: #555; border-radius: 0.2rem;}
+.nctouch-store-info .store-collect p { font-size: 0.55rem; line-height: 1rem; color: #777;}
+
+.nctouch-store-block { display: block; clear: both; background-color: #FFF; border-bottom: solid 0.05rem #EEE; border-top: solid 0.05rem #EEE; margin-top: 0.5rem;}
+.nctouch-store-block .title { display: block; font-size: 0.7rem; line-height: 1rem; padding: 0.5rem;}
+.nctouch-store-block ul { display: block; padding-left: 0.5rem; overflow: hidden;}
+.nctouch-store-block li { display: block; min-height: 1rem; padding: 0.5rem 0; font-size: 0; line-height: 1rem; border-bottom: solid 0.05rem #EEE; white-space: nowrap; position: relative; z-index: 1;}
+.nctouch-store-block li:last-child { border-bottom: none 0;}
+.nctouch-store-block li h4 { display: inline-block; vertical-align: top; width: 3.5rem; color: #888; font-size: 0.6rem;}
+.nctouch-store-block li span { display: inline-block; vertical-align: top; white-space: normal; font-size: 0.7rem;}
+.nctouch-store-block li a.call { display: block; width: 1rem; height: 1rem; background-image: url(../images/tel_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 80%; position: absolute; z-index: 1; top: 0.5rem; right: 0.5rem; opacity: 0.8;}
+.nctouch-store-block li a.qq { display: inline-block; padding: 0 0.3rem 0 0; background-color: #4FC0E8; color: #FFF; font-size: 0.55rem; line-height: 1rem; border-radius: 0.2rem;}
+.nctouch-store-block li a.qq i { width: 1rem; height: 1rem; background-image: url(../images/qq_w.png); background-repeat:  no-repeat; background-position: 50% 50%; background-size: 60%; display: inline-block; vertical-align: top;}
+.nctouch-store-block li a.ww { display: inline-block; padding: 0 0.3rem 0 0; background-color: #FB6E52; color: #FFF; font-size: 0.55rem; line-height: 1rem; border-radius: 0.2rem; margin-left: 0.2rem;}
+.nctouch-store-block li a.ww i { width: 1rem; height: 1rem; background-image: url(../images/ww_w.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; display: inline-block; vertical-align: top;}
+
+.nctouch-store-block ul.credit { padding: 0.25rem 0 0.25rem 0.5rem;}
+.nctouch-store-block ul.credit li { padding: 0.25rem 0; border-bottom: none 0; }
+.nctouch-store-block ul.credit li span { font-size: 0.6rem; color: #ED5564;}
+.nctouch-store-block ul.credit li span.low { color: #48CFAE;}
+.nctouch-store-block ul.credit strong { margin-right: 0.5rem;}
+.nctouch-store-block ul.credit em { margin-left: 0.2rem;}
+
+
+
+.nctouch-store-sliders { display: block; background-color: #FFF; width: 95%; height: 6rem; margin: 2.5%; position: relative; overflow: hidden;}
+.nctouch-store-sliders .swipe-wrap { position: relative; white-space: nowrap; height: auto; overflow: hidden; font-size: 0; }
+.nctouch-store-sliders .swipe-wrap li { display: inline-block; position: relative; height: 6rem;}
+.nctouch-store-sliders .swipe-wrap li a { display: block; width: 100%; height: 100%;}
+.nctouch-store-sliders .swipe-wrap img { width: 100%; height: 100%;}
+
+.nctouch-store-ranking .nctouch-single-nav { margin-top: -0.5rem;}
+.nctouch-store-ranking .nctouch-single-nav li { width: 50%;}
+.nctouch-store-ranking .top-list { position: relative; z-index: 1; width: 95%; height: 10rem; overflow: hidden; margin: 3% 2.5%; }
+.nctouch-store-ranking .top-list dl { display: none;}
+.nctouch-store-ranking .top-list dl:nth-child(1) { position: absolute; z-index: 1; top: 0; left: 0; display: block; width: 10rem; height: 10rem;} 
+.nctouch-store-ranking .top-list dl:nth-child(2) { position: absolute; z-index: 1; top: 0; right: 0; display: block; width: 4.8rem; height: 4.8rem;} 
+.nctouch-store-ranking .top-list dl:nth-child(3) { position: absolute; z-index: 1; bottom: 0; right: 0; display: block; width: 4.8rem; height: 4.8rem;} 
+.nctouch-store-ranking .top-list dl dt { width: 100%; height: 100%;}
+.nctouch-store-ranking .top-list dl dt img { width: 100%; height: 100%;}
+.nctouch-store-ranking .top-list dl dd { position: absolute; z-index: 1; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,0.50); font-size: 0; }
+.nctouch-store-ranking .top-list dl dd span { display: inline-block; width: 40%; height: 1rem; padding: 0.2rem 5%;font-size: 0.55rem; line-height: 1rem; color: #FFF;}
+.nctouch-store-ranking .top-list dl dd span em { vertical-align: middle; margin: 0.1rem; font-weight: 600; line-height: 0.6rem;}
+.nctouch-store-ranking .top-list dl dd span:first-child { text-align: left;}
+.nctouch-store-ranking .top-list dl dd span:last-child { text-align: right;}
+.nctouch-store-ranking .top-list dl:nth-child(2) span:last-child,
+.nctouch-store-ranking .top-list dl:nth-child(3) span:last-child { display: none;}
+
+.nctouch-store-goods-list {}
+.nctouch-store-goods-list ul { font-size: 0; padding: 0 1%;}
+.nctouch-store-goods-list .goods-item { display: inline-block; width: 48%; padding: 0 1% 0.5rem 1%; background-color: #FFF; overflow: hidden;}
+.nctouch-store-goods-list .goods-item a { color: #555; display: block; width: 100%;}
+.nctouch-store-goods-list .goods-item-pic { display: block; width: 100%;}
+.nctouch-store-goods-list .goods-item-pic img { width: 100%; }
+.nctouch-store-goods-list .goods-item-name { font-size: 0.6rem; line-height: 0.7rem; height: 1.4rem; white-space: pre-wrap; overflow: hidden;}
+.nctouch-store-goods-list .goods-item-price { font-size: 0.55rem; line-height: 1rem; color: #DB4453;}
+.nctouch-store-goods-list .goods-item-price em { font-size: 0.6rem; font-weight: 600;}
+
+.nctouch-store-goods-list .addtime { display: block; width: 100%; height: 0.9rem; padding: 0.4rem 0; margin: 0; border: none 0;}
+.nctouch-store-goods-list .addtime time { font-size: 0.55rem; line-height: 0.9rem; font-weight: 600; color: #888;}
+.nctouch-store-bottom { position: fixed; z-index: 10; right: 0; bottom: 0; left: 0; display: block; height: 2rem; background-color: #F5F5F5; border-top: solid 0.05rem #CCC;}
+.nctouch-store-bottom ul { font-size: 0;}
+.nctouch-store-bottom li { display: inline-block; width: 33%; height: 2rem; text-align: center; font-size: 0.7rem; line-height: 2rem; border-left: solid #CCC 0.05rem;}
+.nctouch-store-bottom li:nth-child(1) { border-left: 0;}
+.nctouch-store-bottom li a { display: block; color: #333;}
+
+/*店铺内部分类*/
+.categroy-cnt { padding: 0.5rem 0 0 0;}
+.categroy-cnt a { color: #333;}
+.categroy-cnt .categroy-all { margin-bottom: 0.5rem; background-color: #FFF;}
+.categroy-cnt .categroy-all a { position: relative; display: block; height: 1rem; padding: 0.5rem; font-size: 0.6rem; line-height: 1rem; color: #333;}
+.categroy-cnt .categroy-all i.arrow-r { position: absolute; top: 0.5rem; right: 0.5rem; width: 1rem; height: 1rem; background-image: url(../images/arrow_right_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 65%; opacity: 0.65rem;}
+.categroy-list { background-color: #FFF; font-size: 0;}
+.category-frist { display: block; clear: both;}
+.category-frist a { position: relative; display: block; width: 94%; height: 1rem; padding: 0.5rem 3%; line-height: 1rem; font-size: 0.7rem; color: #333;}
+.category-frist a span { position: absolute; z-index: 1; top: 0.5rem; right: 0.5rem; line-height: 1rem; font-size: 0.6rem; color: #999;}
+.category-seciond { display: inline-block; width: 39.5%; height: 1rem; padding: 0.5rem 3%; margin: 0 0 0.5rem 3%; background-color: #FAFAFA;}
+.category-seciond a { display: block; font-size: 0.6rem; line-height: 1rem;}
+
+/*店铺活动*/
+.store-sale-block { display: block; margin: 0.5rem auto 0 auto; width: 95%; border: solid #DDD 0.05rem; background-color: #FFF;}
+.store-sale-block a { display: block;}
+.store-sale-tit { padding: 0.2rem 0.4rem; font-size: 0.6rem; border-bottom: solid #DDD 0.05rem;}
+.store-sale-tit h3 { display: inline-block; background-color: #ED5564; color: #FFF; padding: 0 0.2rem; line-height: 1rem;}
+.store-sale-tit time { display: block; clear: both; font-size: 0.5rem; color: #888; line-height: 0.8rem; margin-top: 0.2rem;}
+.sotre-sale-con { display: block; padding: 0.3rem;}
+.sotre-sale-con ul { padding: 0.3rem 0.3rem 0 0.3rem; overflow: hidden;}
+.sotre-sale-con ul.mjs { background-color: #D870AD;}
+.sotre-sale-con ul.xs { background-color: #ED5564;}
+.sotre-sale-con li { display: block; clear: both; font-size: 0.6rem; line-height: 0.8rem; margin-bottom: 0.3rem; color: #FFF;}
+.sotre-sale-con li em { font-weight: 600; margin: 0 0.1rem; color: #FFF;}
+.sotre-sale-con li img { width: 0.8rem; height: 0.8rem; margin: 0 0.1rem;}
+.sotre-sale-con .note { font-size: 0.55rem; color: #888; line-height: 0.7rem; margin-top: 0.2rem;}
+
+/*店铺没有相关信息*/
+.mb25 .nctouch-norecord { margin-top: 0;}
+
+.iss-form-elements { font-size: 0; background-color: #F5F5F5; text-align: center; padding: 15px 2%; }
+.iss-form-elements input { font-size: 14px; vertical-align: middle; display: inline-block; width: 78%; height: 30px; text-indent: 8px; border: solid 1px #CCC; border-right: none; }
+.iss-form-elements button { font-size: 14px; color: #FFF; background-color: #aaa; vertical-align: middle; display: inline-block; width: 18%; height: 32px; border: none; cursor: pointer; }

@@ -1,0 +1,92 @@
+﻿# 将 \data\config\config.ini.php
+# $config['url_model'] = false; //如果要启用伪静态，把false修改为true
+
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+
+
+
+# 如果商城程序存放于/33hao下，需将下行更改为 RewriteBase /33hao
+RewriteBase /
+
+#apache ,iis 伪静态规则
+RewriteRule ^index.php$ shop/index.php
+RewriteRule ^category.html$ shop/index.php?act=category&op=index
+RewriteRule ^([0-9]+).html$ shop/index.php?act=goods&goods_id=$1
+RewriteRule ^category.html$ shop/index.php?act=category&act=index
+RewriteRule ^shop_view-(\d+)-(\d+)-([0-5])-([0-2])-(\d+).html$ shop/index.php?act=show_store&op=goods_all&store_id=$1&stc_id=$2&key=3&order=$4&curpage=$5
+RewriteRule ^article-([0-9]+).html$ shop/index.php?act=article&article_id=$1
+RewriteRule ^article_cate-([0-9]+).html$ shop/index.php?act=article&op=article&ac_id=$1
+RewriteRule ^document-([a-zA-Z_]+).html$ shop/index.php?act=document&code=$1
+RewriteRule ^cate-(\d+)-([0-9_]+)-([0-9_]+)-([0-3])-([0-2])-([0-1])-([0-1])-(\d+)-(\d+).html$ shop/index.php?act=search&op=index&cate_id=$1&b_id=$2&a_id=$3&key=$4&order=$5&type=$6&gift=$7&area_id=$8&currpage=$9
+RewriteRule ^brand-(\d+)-([0-3])-([0-2])-([0-1])-([0-1])-(\d+)-(\d+).html$ shop/index.php?act=brand&op=list&brand=$1&key=$2&order=$3&type=$4&gift=$5&area_id=$6&currpage=$7
+RewriteRule ^brand.html$ shop/index.php?act=brand&op=index
+RewriteRule ^night.html$ shop/index.php?act=night&op=index
+RewriteRule ^groupbuy.html$ shop/index.php?act=show_groupbuy&op=index
+RewriteRule ^groupbuy_detail-(\d+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1
+RewriteRule ^groupbuy_list-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_list&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6
+RewriteRule ^groupbuy_soon-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_soon&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6
+RewriteRule ^groupbuy_history-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_history&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6
+RewriteRule ^vr_groupbuy_list-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=vr_groupbuy_list&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8
+RewriteRule ^vr_groupbuy_soon-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=vr_groupbuy_soon&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8
+RewriteRule ^vr_groupbuy_history-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ shop/index.php?act=show_groupbuy&op=vr_groupbuy_history&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8
+RewriteRule ^integral.html$ shop/index.php?act=pointshop&op=index
+RewriteRule ^integral_list.html$ shop/index.php?act=pointshop&op=plist 
+RewriteRule ^integral_item-(\d+).html$ shop/index.php?act=pointshop&op=pinfo&id=$1
+RewriteRule ^voucher.html$ shop/index.php?act=pointvoucher&op=index 
+RewriteRule ^grade.html$ shop/index.php?act=pointgrade&op=index 
+RewriteRule ^explog-(\d+).html$ shop/index.php?act=pointgrade&op=exppointlog&currpage=$1 
+RewriteRule ^comments-(\d+)-([0-3])-(\d+).html$ shop/index.php?act=goods&op=comments_list&goods_id=$1&type=$2&currpage=$3
+RewriteRule ^goods-([0-9]+)(-?)([0-9]*).html$ shop/index.php?act=goods&goods_id=$1
+RewriteRule ^groupbuy-([0-9]+)-([0-9]+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2
+RewriteRule ^store-([0-9]+).html$ shop/index.php?act=show_store&store_id=$1
+RewriteRule ^activity-([0-9]+)-([0-9]*).html$ shop/index.php?act=activity&activity_id=$1&nav_id=$2
+RewriteRule ^store_nav-([0-9]+)-([0-9]+).html$ shop/index.php?act=show_store&store_id=$1&article=$2
+RewriteRule ^coupon_info-([0-9]+)-([0-9]+).html$ shop/index.php?act=coupon_store&op=detail&coupon_id=$1&id=$2
+RewriteRule ^-([0-9]+)-([0-9]+).html$ shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2
+RewriteRule ^night-([a-zA-Z_]+).html$ shop/index.php?act=night&op=night&code=$1
+RewriteRule ^shop-(\d+).html$ shop/index.php?act=show_store&op=index&store_id=$1
+
+
+#nginx 伪静态规则
+rewrite ^/shop/index.php$ /shop/index.php last;
+rewrite ^/shop/category.html$ /shop/index.php?act=category&op=index last;
+rewrite ^/shop/([0-9]+).html$ /shop/index.php?act=goods&goods_id=$1 last;
+rewrite ^/shop/category.html$ /shop/index.php?act=category&act=index last;
+rewrite ^/shop/shop_view-(\d+)-(\d+)-([0-5])-([0-2])-(\d+).html$ /shop/index.php?act=show_store&op=goods_all&store_id=$1&stc_id=$2&key=3&order=$4&curpage=$5 last;
+rewrite ^/shop/article-([0-9]+).html$ /shop/index.php?act=article&article_id=$1 last;
+rewrite ^/shop/article_cate-([0-9]+).html$ /shop/index.php?act=article&op=article&ac_id=$1 last;
+rewrite ^/shop/document-([a-zA-Z_]+).html$ /shop/index.php?act=document&code=$1 last;
+rewrite ^/shop/cate-(\d+)-([0-9_]+)-([0-9_]+)-([0-3])-([0-2])-([0-1])-([0-1])-(\d+)-(\d+).html$ /shop/index.php?act=search&op=index&cate_id=$1&b_id=$2&a_id=$3&key=$4&order=$5&type=$6&gift=$7&area_id=$8&currpage=$9 last;
+rewrite ^/shop/brand-(\d+)-([0-3])-([0-2])-([0-1])-([0-1])-(\d+)-(\d+).html$ /shop/index.php?act=brand&op=list&brand=$1&key=$2&order=$3&type=$4&gift=$5&area_id=$6&currpage=$7 last;
+rewrite ^/shop/brand.html$ /shop/index.php?act=brand&op=index last;
+rewrite ^/shop/night.html$ /shop/index.php?act=night&op=index last;
+rewrite ^/shop/groupbuy.html$ /shop/index.php?act=show_groupbuy&op=index last;
+rewrite ^/shop/groupbuy_detail-(\d+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1 last;
+rewrite ^/shop/groupbuy_list-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_list&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6 last;
+rewrite ^/shop/groupbuy_soon-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_soon&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6 last;
+rewrite ^/shop/groupbuy_history-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_history&class=$1&s_class=$2&groupbuy_price=$3&groupbuy_order_key=$4&groupbuy_order=$5&curpage=$6 last;
+rewrite ^/shop/vr_groupbuy_list-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=vr_groupbuy_list&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8 last;
+rewrite ^/shop/vr_groupbuy_soon-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=vr_groupbuy_soon&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8 last;
+rewrite ^/shop/vr_groupbuy_history-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+)-(\d+).html$ /shop/index.php?act=show_groupbuy&op=vr_groupbuy_history&vr_class=$1&vr_s_class=$2&vr_area=$3&vr_mall=$4&groupbuy_price=$5&groupbuy_order_key=$6&groupbuy_order=$7&curpage=$8 last;
+rewrite ^/shop/integral.html$ /shop/index.php?act=pointshop&op=index last;
+rewrite ^/shop/integral_list.html$ /shop/index.php?act=pointshop&op=plist last;
+rewrite ^/shop/integral_item-(\d+).html$ /shop/index.php?act=pointshop&op=pinfo&id=$1 last;
+rewrite ^/shop/voucher.html$ /shop/index.php?act=pointvoucher&op=index last;
+rewrite ^/shop/grade.html$ /shop/index.php?act=pointgrade&op=index last;
+rewrite ^/shop/explog-(\d+).html$ /shop/index.php?act=pointgrade&op=exppointlog&currpage=$1 last; 
+rewrite ^/shop/comments-(\d+)-([0-3])-(\d+).html$ /shop/index.php?act=goods&op=comments_list&goods_id=$1&type=$2&currpage=$3 last;
+rewrite ^/shop/goods-([0-9]+)(-?)([0-9]*).html$ /shop/index.php?act=goods&goods_id=$1 last;
+rewrite ^/shop/groupbuy-([0-9]+)-([0-9]+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2 last;
+rewrite ^/shop/store-([0-9]+).html$ /shop/index.php?act=show_store&store_id=$1 last;
+rewrite ^/shop/activity-([0-9]+)-([0-9]*).html$ /shop/index.php?act=activity&activity_id=$1&nav_id=$2 last;
+rewrite ^/shop/store_nav-([0-9]+)-([0-9]+).html$ /shop/index.php?act=show_store&store_id=$1&article=$2 last;
+rewrite ^/shop/coupon_info-([0-9]+)-([0-9]+).html$ /shop/index.php?act=coupon_store&op=detail&coupon_id=$1&id=$2 last;
+rewrite ^/shop/-([0-9]+)-([0-9]+).html$ /shop/index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2 last;
+rewrite ^/shop/night-([a-zA-Z_]+).html$ /shop/index.php?act=night&op=night&code=$1 last;
+rewrite ^/shop/shop-(\d+).html$ /shop/index.php?act=show_store&op=index&store_id=$1 last;
+rewrite ^/shop/item-([0-9]+)(-?)([0-9]*).html$ /shop/index.php?act=goods&goods_id=$1&id=$2 last;
+rewrite ^/shop/special.html$ /shop/index.php?act=special&op=special_list last;
+rewrite ^/shop/store.html$ /shop/index.php?act=store_list&op=index last;
+
+                        

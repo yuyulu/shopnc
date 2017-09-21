@@ -1,0 +1,42 @@
+/* ================================ */
+/* Author:			33hao	    	*/
+/* Support Site:	www.33hao.com	*/
+/* Retrofit Date:	Aug-08-2016		*/
+/* ================================ */
+
+@charset "utf-8 ";
+
+
+.squares .list_pic { width: 1210px;}
+.squares .list_pic li { width: 230px;}
+
+.brand-info{ position:relative; height:460px; margin-bottom: 20px; overflow:hidden}
+.brand-info .hd{ height:15px; overflow:hidden; position:absolute; right:50%; bottom:5px; z-index:1; }
+.brand-info .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.brand-info .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; border-radius:10px; }
+.brand-info .hd ul li.on{ background:#7d256e; color:#7d256e; }
+.cent_main_t{ width:auto; height:460px; }
+.brand-info .bd .pos_r{ position:relative}
+.brand-info .bd .pos_r .infor{ width:332px; height:276px; padding:4px; position:absolute; top:90px; right:0px; transition: all .25s linear;
+} 
+.brand-info .bd .pos_r .infor_bg { width:332px; height:276px; padding:4px; background:#fff; opacity: 0.8;  -moz-opacity:0.8; filter:alpha(opacity=80);  position:absolute;top:-5px; right:-5px;  z-indext1; ransition: all .25s linear;
+} 
+.brand-info .bd .pos_r .infor:hover{ right:80px;} 
+.brand-info .bd .pos_r .infor .in_div {position:absolute;top:0px; right:0px; z-index: 2; width:280px; height:240px; border:2px solid #000; background:#FFF; padding:10px 25px 20px 25px;}
+.brand-info .bd .pos_r .infor .in_div .top{ width:150px; height:71px; line-height: 71px; border-bottom:1px solid #000; padding:0 67px 5px 67px;}
+.brand-info .bd .pos_r .infor .in_div .top img{ width:150px; height:auto; margin:auto;}
+.brand-info .bd .pos_r .infor .in_div .tit_p{ font-size:24px; text-align:center; line-height:40px;}
+.brand-info .bd .pos_r .infor .in_div .cen_d{ line-height: 25px; position: absolute; left: 30px; width: 278px; z-index: 66; background: #FFF;overflow: hidden; padding: 0 5px 0 5px; overflow:auto;}
+
+.x_jt{position:absolute;right:48%; bottom:57px; z-index:67;position:absolute; z-index:67; width:17px; height:17px; background:url(../images/x_h.png) no-repeat;}
+.s_jt{position:absolute; right:48%; bottom:15px; z-index:67; width:17px; height:17px; background: url(../images/s_h.png) no-repeat;}
+.more{overflow:hidden !important; background:#FFF; height:71px;}
+.h_124{ height:127px;}
+.heigt_75{ height:75px; background:#FFF;}
+.brand-info .bd .pos_r .infor .in_div .bott_d  { width: 280px; margin-top:90px; *margin-top:0; _margin-top:0}
+.brand-info .bd .pos_r .infor .in_div .bott_d .flag_ss{ width:45px; height:31px; float:left;}
+.brand-info .bd .pos_r .infor .in_div .bott_d .flag_ss img{ width:30.5px; height:21px;padding:12px 0 0 0; }
+.brand-info .bd .pos_r .infor .in_div .bott_d .guojia{ _width:108px; float:left; padding:14px 0 0 5px; font-size:18px; color:#666; font-weight:700;}
+.brand-info .bd .pos_r .infor .in_div .bott_d .guanzhu{ width:75px; float:right; line-height:18px;} 
+.brand-info .bd .pos_r .infor .in_div .bott_d .guanzhu .top_p{ text-align:center; color:#ef195f}
+.brand-info .bd .pos_r .infor .in_div .bott_d .guanzhu .bot_p{ padding:0 0 0 15px; background:url(../images/xin.png) no-repeat left center;}

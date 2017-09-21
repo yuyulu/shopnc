@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* ================================ */
+/* 触屏版商品分类样式类型				*/
+/* ================================ */
+/* Author:			3  3hao .	    	*/
+/* Support Site:	www.33h ao.com	*/
+/* Retrofit Date:	Aug-08-2016		*/
+/* ================================ */
+
+/*商品分类*/
+.categroy-cnt { width: 3.8rem; height: 100%x; display: block; float: left; position: absolute; z-index: 1; top: 2rem; bottom: 0; left: 0; overflow: hidden;}
+
+/*分类一级导航*/
+.categroy-list { padding: 0 0.5rem; position: absolute; }
+.category-item { width: 2.8rem; height: 2.8rem; }
+.category-item-a { display: block; }
+.ci-fcategory-ico { width: 1rem; height: 1rem; padding: 0.45rem 0 0.25rem 0; margin: 0 auto; }
+.ci-fcategory-ico img { display: block; vertical-align: top; width: 100%; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; opacity: 0.5; }
+.ci-fcategory-name { font-size: 0.6rem; line-height: 0.9rem; color: #999; text-align: center; width: 100%; height: 0.9rem; padding-bottom: 0.25rem; border-bottom: solid 0.05rem #EEE;}
+.category-item.selected .ci-fcategory-ico img { -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); filter: gray; opacity: 1; }
+.category-item.selected .ci-fcategory-name { color: #ED5564; padding-bottom: 0.2rem; border-bottom: solid 0.1rem #ED5564; }
+.categroy-third-list { display: none; color: #666; border-bottom: 1px solid #ccc; box-shadow: 0 -2px 0 #e4e4e4 inset;/*border-top:2px solid #e4e4e4;*/ background: #f5f5f5; }
+.categroy-third-list li { border-bottom: 1px solid #dddddd; }
+.categroy-third-list a { color: #6d6d6d; display: block; padding: 15px 0px 15px 11px; }
+
+/* 分类子级内容 */
+.categroy-rgt { background-color: #FCFCFC;  position: absolute; z-index: 1; left: 3.8rem; top: 2rem; bottom: 0; right: 0; overflow: hidden;}
+
+/* 品牌推荐 */
+.brands-recommend { font-size: 0; }
+.brands-recommend dd { background-color: #FFF; vertical-align: top; display: inline-block; width: 3.3rem; height: 3.3rem; padding: 0.2rem; margin: 0.3rem 0 0 0.3rem; }
+.brands-recommend dd a { display: block;}
+.brands-recommend dd img { width: 100%; margin: 0.5rem 0; }
+.brands-recommend dd a { color: #333; }
+.brands-recommend dd p { font-size: 0.5rem; line-height: 1rem; white-space: nowrap; text-overflow: ellipsis; text-align: center; overflow: hidden;}
+
+/* 二三级分类 */
+.categroy-child-list { font-size: 0; width: 100%; background-color: #FFF;}
+.categroy-child-list dt { background-color: #FCFCFC; margin: 0.2rem 0; border-style: solid; border-color: #F5F5F5; border-width: 0.05rem 0; }
+.categroy-child-list dt a { display: block; width: 96%; height: 1.48rem; padding: 0 0 0 4%; font-size: 0.6rem; line-height: 1.48rem; color: #111;}
+.categroy-child-list dt i { width: 0.4rem; height: 0.4rem; vertical-align: middle; display: inline-block; border-radius: 0.2rem; margin-right: 0.4rem; }
+.categroy-child-list dt i.col0 { background-color: #ED5564;}
+.categroy-child-list dt i.col1 { background-color: #AC92ED;}
+.categroy-child-list dt i.col2 { background-color: #4FC0E8;}
+.categroy-child-list dt i.col3 { background-color: #A0D468;}
+.categroy-child-list dt i.col4 { background-color: #48CFAE;}
+.categroy-child-list dt i.col5 { background-color: #EC87BF;}
+.categroy-child-list dt i.col6 { background-color: #FFCE55;}
+.categroy-child-list dt i.col7 { background-color: #5D9CEC;}
+.categroy-child-list dt i.col8 { background-color: #FB6E52;}
+.categroy-child-list dt i.col9 { background-color: #AAB2BD;}
+.categroy-child-list dt i.arrow-r { display: block; width: 0.6rem; height: 0.6rem; background: transparent url(../images/arrow_right_b.png) no-repeat 50% 50%; background-size: cover; float: right; margin: 0.5rem 0.5rem 0 0; opacity: 0.5;}
+.categroy-child-list dt:first-child { margin-top: 0;}
+.categroy-child-list dd { font-size: 0.55rem; line-height: 1.48rem; vertical-align: top; display: inline-block; width: 3.35rem; height: 1.48rem; padding: 0.2rem; margin-left: 0.3rem; border-radius: 0;}
+.categroy-child-list dd a { display: block; color: #444; white-space: nowrap;  text-overflow: ellipsis; overflow: hidden;}
+
+/*商品列表头部特征*/
+.nctouch-product-header .header-inp {}
+.nctouch-product-header .header-inp { margin: 0.275rem 3.8rem 0 2rem;}
+.nctouch-product-header .header-inp .search-input { width: 7.5rem; color: #333;}
+.nctouch-product-header .header-r a { padding: 0.5rem 0.6rem 0.5rem 0.2rem;}
+.nctouch-product-header .header-r a.categroy { width: 0.975rem; height: 1.575rem; padding: 0.2rem 0.5rem 0.2rem 0.3rem;}
+.nctouch-product-header .header-r a.categroy i { width: 100%; height: 1rem; background-image: url(../images/stiore_categroy_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 70%; opacity: 0.65;}
+.nctouch-product-header .header-r a.categroy p {display: block; font-size: 0.45rem; line-height: 0.575rem; text-align: center; color: #555; }
+

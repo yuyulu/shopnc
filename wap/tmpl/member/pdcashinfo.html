@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+<title>账户余额</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css">
+<link rel="stylesheet" type="text/css" href="../../css/nctouch_member.css">
+</head>
+<body>
+<header id="header">
+  <div class="header-wrap">
+    <div class="header-l"><a href="javascript:history.go(-1)"><i class="back"></i></a></div>
+    <div class="header-title">
+      <h1>提现详情</h1>
+    </div>
+  </div>
+</header>
+<div class="nctouch-main-layout" id="pdcashinfo"> </div>
+<footer id="footer" class="bottom"></footer>
+<script type="text/html" id="info_model">
+        <ul class="nctouch-default-list">
+            <li><h4>申请单号</h4><span class="num"><%=info.pdc_sn %></span></li>
+            <li><h4>提现金额</h4><span class="num"><%=info.pdc_amount %></li>
+            <li><h4>收款银行</h4><span class="num"><%=info.pdc_bank_name %></li>
+            <li><h4>收款账号</h4><span class="num"><%=info.pdc_bank_no %></li>
+            <li><h4>开户人姓名</h4><span class="num"><%=info.pdc_bank_user %></li>
+            <li><h4>创建时间</h4><span class="num"><%=info.pdc_add_time_text %></li>
+            <li><h4>提现状态</h4><span class="num"><%=info.pdc_payment_state_text %></span></li>
+            <% if(info.pdc_payment_time_text){%>
+			<li><h4>通过时间</h4><span class="num"><%=info.pdc_payment_time_text %></span></li>
+			<%}%>
+        </ul>
+</script> 
+<script type="text/javascript" src="../../js/config.js"></script> 
+<script type="text/javascript" src="../../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script> 
+<script type="text/javascript" src="../../js/common.js"></script> 
+<script>
+    $(function(){
+        var key = getCookie('key');
+        if (!key) {
+            window.location.href = WapSiteUrl+'/tmpl/member/login.html';
+            return;
+        }
+
+        //获取详情
+        $.getJSON(ApiUrl + '/index.php?act=member_fund&op=pdcashinfo', {'key':key,'pdc_id':getQueryString('pdc_id')}, function(result){
+            var html = template.render('info_model', result.datas);
+            $("#pdcashinfo").html(html);
+        });
+    });
+</script>
+</body>
+</html>

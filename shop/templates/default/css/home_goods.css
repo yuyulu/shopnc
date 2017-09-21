@@ -1,0 +1,566 @@
+/* ================================ */
+/* Author:			33hao	    	*/
+/* Support Site:	www.33hao.com	*/
+/* Retrofit Date:	Aug-08-2016		*/
+/* ================================ */
+
+@charset "utf-8 ";.saleP{font-weight:600;color:#F32613;vertical-align:middle}
+body{background:#fff}
+.ncs-detail{min-height:500px;margin-bottom:20px;border:solid 1px #EEE;background:#fff;position:relative;z-index:2}
+.ncs-detail .ncs-info{display:block}
+.ncs-lal{width:210px;display:block}
+.ncs-lal .title{font-size:12px;font-weight:600;line-height:20px;background-color:#f5f5f5;display:block;padding:5px 10px;border-bottom:solid 1px #eee}
+.ownshop .ncs-lal .title{margin:1px}
+.ncs-lal .content{width:190px;margin:0 auto}
+.ncs-lal .content ul{font-size:0;word-spacing:-1em}
+.ownshop .ncs-lal .content ul{}
+.ncs-lal .content ul li{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;width:95px}
+.ncs-lal .content ul li .goods-pic{width:60px;height:60px;margin:5px auto}
+.ownshop .ncs-lal .content ul li .goods-pic{margin:10px auto}
+.ncs-lal .content ul li .goods-pic a{background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:60px;height:60px;border:1px solid transparent;overflow:hidden}
+.ncs-lal .content ul li .goods-pic a:hover{border-color:#F32613}
+.ncs-lal .content ul li .goods-pic a img{max-width:60px;max-height:60px;margin-top:expression(60-this.height/2)}
+.ncs-lal .content ul li .goods-price{font-weight:600;text-align:center;color:#F32613}
+.ncs-lal .content ul li .goods-price{font-weight:600;text-align:center;color:#c00;}
+.ncs-goods-picture{background-color:#FFF;position:absolute;z-index:99;top:0;left:0}
+.ncs-goods-picture .gallery_wrap{height:380px;width:380px;position:relative;overflow:hidden}
+.ncs-goods-picture .gallery{position:absolute;overflow:hidden;opacity:1;height:360px;width:360px;left:20px;top:20px}
+.ncs-goods-picture .gallery img{width:360px;height:360px}
+.ncs-goods-picture .place_gallery{margin-left:-180px;top:4%;left:50%}
+.ncs-goods-picture img{display:block;-ms-interpolation-mode:bicubic}
+.ncs-goods-picture .controller_wrap{filter:progid:DXImageTransform.Microsoft.gradient(enabled= 'true ',startColorstr= '#B2FFFFFF ',endColorstr= '#B2FFFFFF ');background:rgba(255,255,255,.7);padding:0;position:absolute;left:20px;right:20px;bottom:-65px}
+.ncs-goods-picture .controller{width:370px;height:62px;position:relative;overflow:hidden}
+.ncs-goods-picture .controller ul{font-size:0;width:100%;position:absolute;top:0;left:0}
+.ncs-goods-picture .controller li{vertical-align:middle;letter-spacing:normal;word-spacing:normal;display:inline-block;width:74px}
+.ncs-goods-picture .controller img{max-width:58px;max-height:58px;margin-top:expression(58-this.height/2);text-align:center;vertical-align:middle;display:table-cell;padding:1px;border:1px solid #EEE;overflow:hidden}
+.ncs-goods-picture .controller .current img{padding:0;border-width:2px;border-color:#F32613}
+.cloudzoom-lens{width:30px;height:30px;border:1px solid #eee;box-shadow:0 0 6px rgba(0,0,0,.2);cursor:crosshair;z-index:10}
+.cloudzoom-zoom{background:#fff;border:1px solid #EEE;width:360px;height:360px;z-index:200;box-shadow:3px 3px 0 rgba(0,0,0,.1)}
+.cloudzoom-zoom-inside{border:none;box-shadow:none}
+.cloudzoom-caption{display:none;text-align:center;background-color:#fff7d1;color:#FF5C4D;top:20px;font-weight:700;padding:5px 10px;font-family: " ????????";font-size:13px}
+.cloudzoom-blank{background-image:url(../images/shop/blank.png)}
+.cloudzoom-ajax-loader{background-image:url(../images/shop/ajax-loader.gif);width:32px;height:32px}
+.ncs-goods-summary{background-color:#FFF;float:right;width:589px;min-height:500px;margin-right:208px;border-right:solid 1px #EEE;border-left:solid 1px #EEE}
+.ncs-goods-summary .name{padding:15px 20px}
+.ncs-goods-summary .name h1,.ncs-goods-summary .name strong{font:700 16px/21px "Microsoft Yahei ";color:#333;text-overflow:ellipsis;white-space:nowrap;display:block;overflow:hidden}
+.ncs-goods-summary .name strong{font-weight:400;font-size:12px;line-height:17px;color:#777;white-space:normal;margin-top:5px}
+.ncs-meta{color:#999;background:#f5f5f5 url(../images/shop/goods_meta_bg.png) no-repeat 0 50%;background-size:cover;padding:15px 0;position:relative;z-index:3}
+.ncs-sale{background-color:#FAFAFA;border-bottom:solid 1px #eee;position:relative;z-index:3}
+.ncs-sale .goods-gift{max-height:120px;overflow:hidden;position:relative;z-index:1}
+.ncs-sale .goods-gift ul li{font-size:0;margin-bottom:4px}
+.ncs-sale .goods-gift .goods-gift-name,.ncs-sale .goods-gift .goods-gift-thumb,.ncs-sale .goods-gift ul li em{font-size:12px;vertical-align:middle;letter-spacing:normal;word-spacing:normal;display:inline-block}
+.ncs-sale .goods-gift .goods-gift-thumb span{background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:24px;height:24px;padding:1px;border:1px solid #EEE;overflow:hidden}
+.ncs-sale .goods-gift .goods-gift-thumb span img{max-width:24px;max-height:24px;margin-top:expression(24-this.height/2)}
+.ncs-sale .goods-gift .goods-gift-name{color:#005EA6;margin-left:5px}
+.ncs-sale .goods-gift ul li em{font-family:Arial;color:#F60;margin-left:5px}
+.ncs-plus{padding:0}
+.ncs-key{position:relative;z-index:1}
+.ncs-goods-summary hr{font-size:0;background-color:transparent;line-height:0;width:90%;margin:0 auto;border:none;border-top:dotted 1px #eee}
+.ncs-goods-summary dl{font-size:0}
+.ncs-goods-summary dl dd,.ncs-goods-summary dl dt{font-size:12px;line-height:24px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;min-height:24px;padding:6px 0 0}
+.ncs-meta dl dd,.ncs-meta dl dt{line-height:30px;height:30px;font-family: "Microsoft YaHei ", " \5FAE \8F6F \96C5 \9ED1 "!important;font:12px/1.5 Arial}
+.ncs-sale dl dd,.ncs-sale dl dt{padding:10px 0}
+.ncs-goods-summary dt{text-align:right;width:96px;margin-right:6px}
+.ncs-goods-summary dd{text-align:left;width:460px}
+.ncs-meta dl dd i.ver-line{display:inline-block;zoom:1}
+.ncs-meta dl dd a{color:#333;text-decoration:underline;vertical-align:middle;display:inline-block}
+.ncs-meta .price strong{font:700 30px/25px Tahoma;vertical-align:middle;text-shadow:0 1px 0 #6C0900;color:#c00}
+.ncs-meta .price strong i{font-family:Arial;font-size:18px}
+.ncs-meta .price em{color:#c00;vertical-align:middle;margin-left:8px}
+.ncs-meta .cost-price strong{text-decoration:line-through;color:#c00}
+.ncs-goods-code{width:100px;height:120px;position:absolute;z-index:1;top:12px;right:12px}
+.ncs-goods-code p{vertical-align:middle;text-align:center;display:table-cell;width:100px;height:100px;padding:0;overflow:hidden}
+.ncs-goods-code img{max-width:100px;max-height:100px;margin-top:expression(100-this.height/2)}
+.ncs-book-down{font-size:0;width:360px;padding:5px 130px 5px 100px;position:relative;z-index:1;background-color:#FAFAFA;border-bottom:solid 1px #eee}
+.ncs-book-down .rule-price,.ncs-book-down .rule-symbol{font-size:12px;text-align:center;vertical-align:middle;display:inline-block}
+.ncs-book-down .rule-price{color:#F32613;line-height:20px;background-color:#FFF;min-width:60px;height:40px;padding:4px 9px;border:dashed 1px #C92000}
+.ncs-book-down .rule-price strong{font-weight:600;display:block;color:#000}
+.ncs-book-down .rule-symbol{font-size:16px;margin:0 10px}
+.ncs-book-down .rule-time{font-size:12px;display:block;clear:both;padding:5px 0 0 0}
+.ncs-book-down .rule-info{font-size:12px;display:block;position:absolute;z-index:1;top:20px;right:100px}
+.ncs-book-down .rule-info a{color:#333;display:block;position:relative;z-index:1;cursor:pointer}
+.ncs-book-down .rule-info a:hover{color:#F32613;text-decoration:none}
+.ncs-book-down .rule-info a i{font-size:16px;vertical-align:middle;margin-left:6px;color:#6DD900}
+.ncs-book-down .rule-info a ul{background-color:#FFF;display:none;width:300px;padding:0 10px 10px;position:absolute;z-index:1;top:25px;left:-100px;box-shadow:4px 4px 0 #F5F5F5}
+.ncs-book-down .rule-info a:hover ul{display:block;background-color:#FFF}
+.ncs-book-down .rule-info a ul .arrow{font-size:0;line-height:0;display:block;width:0;height:0;margin-left:95px;margin-top:-15px;border-color:transparent transparent #FFF transparent;border-style:dashed dashed solid dashed;border-width:8px}
+.ncs-book-down .rule-info a ul li{color:#777;line-height:16px;padding:10px 0 0}
+.ncs-sale .promotion-info{font-size:0;word-spacing:-1em;position:relative;z-index:4}
+.ncs-sale .promotion-info span{font-size:12px;vertical-align:middle;letter-spacing:normal;word-spacing:normal;display:inline-block}
+.ncs-sale .promotion-info .sale-name{line-height:16px;color:#FFF;background-color:#FF875A;height:16px;padding:2px 5px;margin-right:10px}
+.ncs-sale .promotion-info .sale-rule{color:#555;width:325px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.ncs-sale .promotion-info .sale-rule em{font-family:Arial;font-weight:600;color:#333;margin:0 1px}
+.ncs-sale .promotion-info .sale-rule a.gift{background-color:#FFF;text-align:center;vertical-align:middle;display:inline-block;width:20px;height:20px;padding:1px;overflow:hidden}
+.ncs-sale .promotion-info .sale-rule a.gift img{max-width:20px;max-height:20x}
+.ncs-sale .promotion-info .sale-rule-more i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -50px -100px;vertical-align:middle;display:inline-block;width:7px;height:4px;margin-left:4px}
+.ncs-sale .promotion-info .sale-rule-more strong{font-weight:400;color:#FF875A;margin:0 2px}
+.ncs-sale .promotion-info .sale-rule-more a{color:#999}
+.ncs-sale .promotion-info .sale-rule-more a:hover{color:#FF875A;text-decoration:none}
+.sale-rule-content{font-size:12px;background-color:#FFF;width:508px;border:solid 1px #D7D7D7;position:absolute;z-index:1;top:5px;left:-5px;box-shadow:4px 4px 0 rgba(0,0,0,.05)}
+.sale-rule-content .title{line-height:20px;background-color:#F5F5F5;height:20px;padding:5px;border-bottom:solid 1px #D6D6D6}
+.sale-rule-content .title span{vertical-align:top}
+.sale-rule-content .title strong{font-weight:400;color:#FF875A;margin:0 2px}
+.sale-rule-content .title a{float:right}
+.sale-rule-content .content{padding:5px 0 5px 60px}
+.sale-rule-content .bottom{border-top:solid 1px #D7D7D7;padding:8px 0;overflow:hidden}
+.sale-rule-content .bottom a{color:#005EA6;text-decoration:none;float:right;margin-right:10px}
+.sale-rule-content .mjs-tit{font-weight:600}
+.sale-rule-content .mjs-tit time{font-weight:400;color:#999}
+.sale-rule-content .mjs-info li{line-height:24px;display:block;height:24px;margin-bottom:2px}
+.ncs-jjg,.ncs-mansong{padding:2px 0}
+.cou-rule-list{background-color:#FFF;padding:5px 0 5px 60px}
+.couRuleScrollbar{position:relative;max-height:180px;padding-right:10px;overflow:hidden}
+.cou-rule{display:block;padding:0 0 5px 0;border-bottom:dashed 1px #D6D6D6;margin-bottom:5px}
+.cou-rule h4{color:#000;line-height:20px;margin-bottom:5px}
+.cou-rule ul li{display:block;width:100%;height:20px;padding:2px 0}
+.cou-rule ul li img{width:20px;height:20px;float:left;margin-right:5px}
+.cou-rule ul li h5{color:#777;white-space:nowrap;text-overflow:ellipsis;width:300px;height:20px;float:left;overflow:hidden}
+.cou-rule ul li h6{color:#690;display:block;width:80px;text-align:right;float:right}
+.ncs-freight{padding:6px 0}
+.ncs-freight dt{line-height:28px}
+.ncs-freight_box{display:block;position:relative;z-index:80}
+.ncs-freight-select{height:28px;float:left;margin-right:6px;position:relative;z-index:3}
+.ncs-freight-select .text{line-height:26px;background-color:#FFF;height:26px;float:left;padding:0 20px 0 15px;border:solid 1px #eee;position:relative;z-index:1;overflow:hidden;cursor:pointer}
+.ncs-freight-select.hover .text{display:none}
+.ncs-freight-select .text b{font-size:0;line-height:0;background:url(../images/shop/2014_ncs_public_img.png) no-repeat -50px -100px;display:block;width:8px;height:4px;position:absolute;top:10px;right:6px;overflow:hidden}
+.ncs-freight-select.hover .close,.ncs-freight-select.hover .content{display:block}
+.ncs-freight-select .content{background-color:#FFF;display:none;width:512px;padding:0;border:1px solid #D7D7D7;position:absolute;z-index:2;top:0;left:0;box-shadow:4px 4px 0 rgba(0,0,0,.05)}
+.ncs-freight-select .ncs-stock{position:relative}
+.ncs-freight-select .ncs-stock .tab{background-color:#FAFAFA;width:100%;height:26px;float:left;border-bottom:solid 1px #eee;overflow:visible}
+.ncs-freight-select .ncs-stock .tab li{float:left;clear:none;padding:0}
+.ncs-freight-select .ncs-stock .tab .current a.hover,.ncs-freight-select .ncs-stock .tab a{font-size:12px;line-height:26px;color:#999;text-align:center;float:left;height:26px;padding:0 15px 0 15px;border-style:solid;border-width:0 1px 0 0;border-color:#eee;position:relative;cursor:pointer;-moz-border-colors:none}
+.ncs-freight-select .ncs-stock .tab a.hover{line-height:26px;color:#000;text-decoration:none;background-color:#FFF;height:26px;padding:0 15px 1px 15px;border-color:#eee;border-style:solid;border-width:0 1px 0 0}
+.ncs-freight-select .ncs-stock .tab a i{font-size:0;line-height:0;background:url(../images/shop/2014_ncs_public_img.png) no-repeat -50px -100px;vertical-align:middle;display:inline-block;width:8px;height:4px;margin-left:6px}
+.ncs-freight-select .ncs-stock .area-list{display:block;clear:both;padding:10px 15px;overflow:hidden}
+.ncs-freight-select .ncs-stock .area-list li{line-height:20px;white-space:nowrap;text-overflow:ellipsis;width:112px;height:20px;padding:4px 0 4px 4px;float:left;overflow:hidden}
+.ncs-freight-select .ncs-stock .area-list li.longer-area{width:228px}
+.ncs-freight-select .ncs-stock .area-list li a{line-height:16px;color:#555;padding:2px 5px}
+.ncs-freight-select .ncs-stock .area-list li a:hover{color:#FFF;text-decoration:none;background-color:#FF875A}
+.ncs-freight-select .close{font-size:12px;line-height:20px;display:none;width:24px;height:20px;position:absolute;z-index:2;top:4px;left:480px;cursor:pointer}
+#ncs-freight-prompt{line-height:28px;color:#999;float:left}
+#ncs-freight-prompt strong{font-size:16px;color:#333;margin:0 8px}
+.ncs-logistics{position:relative;z-index:2}
+.ncs-logistics .ncs-chain{padding:6px 0}
+.ncs-logistics .ncs-chain i.icon-chain{background:url(../images/shop/2014_ncs_public_img.png) no-repeat 0 -100px;vertical-align:middle;display:inline-block;width:20px;height:20px;padding-right:5px}
+.ncs-logistics .ncs-chain dd{color:#999}
+.ncs-logistics .ncs-chain a{font-size:14px;color:#BA7538;margin-right:5px}
+.ncs-chain-show{display:block;padding:10px}
+.ncs-chain-show dl{font-size:0;margin-bottom:10px}
+.ncs-chain-show dd,.ncs-chain-show dt{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block}
+.ncs-chain-show dt{font-size:14px;line-height:28px;margin-right:10px}
+.ncs-chain-show dd select{margin-right:4px}
+.ncs-chain-list{background:#F5F5F5 url(../images/shop/ncs_chain_show.png) no-repeat 50% 40%;min-height:300px;border:solid 1px #eee}
+.ncs-chain-no-date{font-size:16px;font-weight:600;text-align:center;margin:180px auto 0 auto}
+.ncs-chain-list ul{padding:10px}
+.ncs-chain-list ul li{line-height:20px;background-color:#FFF;padding:5px 5px 5px 15px;margin-bottom:10px;border:solid 1px #eee;border-radius:5px}
+.ncs-chain-list ul li a{color:#2272c8}
+.ncs-chain-list ul li a:hover{text-decoration:underline}
+.ncs-chain-list ul li h5 i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -30px -100px;vertical-align:middle;display:inline-block;width:10px;height:12px;margin-right:5px}
+.ncs-chain-list ul li p{color:#999}
+.ncs-chain-list ul li .handle{line-height:20px;height:20px;float:right;padding:10px;border-left:solid 1px #eee}
+.ncs-chain-detail{background:url(../images/shop/ncs_chain_bg.jpg) no-repeat 50% 50%;width:1160px;padding:20px;margin:20px auto;overflow:hidden}
+.ncs-chain-detail .chain-img{float:left;width:360px;height:360px;overflow:hidden}
+.ncs-chain-detail .chain-info{float:right;width:760px}
+.ncs-chain-detail .chain-info .chain-name{padding:10px;border-bottom:dotted 1px #CCC}
+.ncs-chain-detail .chain-info a{color:#FFDB60;background-color:#F32613;float:right;padding:4px 10px;border-radius:5px}
+.ncs-chain-detail .chain-info a i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -30px -100px;vertical-align:middle;display:inline-block;width:10px;height:12px;margin-right:5px}
+.ncs-chain-detail .chain-info h1{font-size:24px;font-weight:600;line-height:30px;color:#333;display:inline-block}
+.ncs-chain-detail .chain-info dl{padding:5px 5px 10px 5px}
+.ncs-chain-detail .chain-info dt{font-size:14px;line-height:32px;color:#555}
+.ncs-chain-detail .chain-info dd{font-size:12px;line-height:24px;color:#777}
+.ncs-key dl{padding:8px 0 0}
+.ncs-key ul{font-size:0}
+.ncs-key ul li{vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;margin:0 6px 6px 0;position:relative;z-index:1}
+.ncs-key ul li a{white-space:nowrap;display:block;min-height:24px;padding:1px;border:1px solid #eee;cursor:pointer}
+.ncs-key ul li.sp-img a{background-color:#FFF;font-size:12px;color:#999;padding-right:5px}
+.ncs-key ul li.sp-img a img{vertical-align:middle;display:inline-block;max-width:24px;max-height:24px;margin-right:5px}
+.ncs-key ul li.sp-txt a{font-size:12px;line-height:24px;color:#000;text-decoration:none;background:#FFF none;text-align:center;white-space:nowrap;min-width:20px;height:24px;padding:0 5px!important;margin:1px}
+.ncs-key ul li.sp-img a.hovered,.ncs-key ul li.sp-img a:hover{color:#F32613;text-decoration:none;border:2px solid #F32613;padding:0 4px 0 0}
+.ncs-key ul li.sp-txt a.hovered,.ncs-key ul li.sp-txt a:hover{border:2px solid #F32613;margin:0}
+.ncs-key ul li a i{display:none}
+.ncs-key ul li a.hovered i{font-size:0;line-height:0;background:url(../images/shop/2014_ncs_public_img.png) no-repeat 0 0;display:block;width:11px;height:11px;position:absolute;z-index:1;right:2px;bottom:2px}
+.ncs-buy{display:block;clear:both;padding:20px 0 20px 30px;position:relative;z-index:1}
+.ncs-figure-input{vertical-align:top;display:inline-block;width:65px;position:relative;z-index:1}
+.ncs-figure-input .input-text{color:#333;font-family:Tahoma;font-size:16px;font-weight:600;line-height:41px;text-align:center;height:41px;width:41px;padding:0;border:solid 1px #eee}
+.ncs-figure-input a{font-size:0;background-color:#FFF;background:url(../images/shop/2014_ncs_public_img.png) no-repeat;display:block;width:20px;height:20px;border-style:solid;border-color:#eee;border-width:1px 1px 1px 0;position:absolute;z-index:1;left:42px;-webkit-text-size-adjust:none}
+.ncs-figure-input a:hover{color:#F32613;text-decoration:none}
+.ncs-figure-input a.increase{background-position:-100px -100px;top:0}
+.ncs-figure-input a.decrease{background-position:-120px -100px;top:21px}
+.ncs-figure-input span{white-space:nowrap;display:block;position:absolute;z-index:1;top:50px;left:0}
+.ncs-figure-input span em{margin:0 2px}
+.ncs-figure-input span strong{color:#F60;margin:0 2px}
+.ncs-point{font-size:14px;color:666;background-color:#FFF7D1;display:block;height:24px;padding:5px 9px;border:solid 1px #E5DEBC;position:absolute;z-index:1;top:74px;left:30px;box-shadow:3px 3px 0 rgba(0,0,0,.1)}
+.ncs-point i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -70px -100px;display:block;width:8px;height:8px;margin-top:-13px;margin-left:8px;margin-bottom:5px}
+.ncs-point span{line-height:24px}
+.ncs-point span strong{font-weight:600;color:#FF5C4D;margin:0 2px}
+.ncs-point span a{color:#06C;text-decoration:underline;margin:0 2px}
+.ncs-point span.look{font-weight:600;color:#FF5C4D}
+.ncs-goods-summary .ncs-btn a.arrival{color:#690;vertical-align:top;display:inline-block;margin-top:5px}
+.ncs-goods-summary .ncs-btn a.arrival i{font-size:14px}
+.ncs-goods-summary .ncs-btn{vertical-align:top;display:inline-block;height:42px;position:relative;z-index:70;zoom:1}
+.ncs-goods-summary .ncs-btn a.addcart,.ncs-goods-summary .ncs-btn a.buynow,.ncs-goods-summary .ncs-btn a.no-addcart,.ncs-goods-summary .ncs-btn a.no-buynow{font:700 16px/32px "Microsoft Yahei ";color:#FFF;text-align:center;display:inline-block;height:32px;padding:5px 12px;margin-right:5px;border-radius:2px;position:relative;overflow:hidden}
+.ncs-goods-summary .ncs-btn a.addcart:hover,.ncs-goods-summary .ncs-btn a.buynow:hover,.ncs-goods-summary .ncs-btn a.no-addcart:hover,.ncs-goods-summary .ncs-btn a.no-buynow:hover{text-decoration:none}
+.ncs-goods-summary .ncs-btn a.buynow{background-color:#BA7538}
+.ncs-goods-summary .ncs-btn a:hover.buynow{background-color:#96602E}
+.ncs-goods-summary .ncs-btn a.addcart{background-color:#F32613}
+.ncs-goods-summary .ncs-btn a:hover.addcart{background-color:#CF0010}
+.ncs-goods-summary .ncs-btn a.no-addcart,.ncs-goods-summary .ncs-btn a.no-buynow,.ncs-goods-summary .ncs-btn a:hover.no-addcart,.ncs-goods-summary .ncs-btn a:hover.no-buynow{background-color:#AAA;cursor:not-allowed}
+.ncs-goods-summary .ncs-btn a i{font-size:17px;margin-right:6px}
+.ncs-cart-popup{background-color:#F5F5F5;display:none;width:320px;height:120px;border:solid 1px #eee;box-shadow:0 0 3px rgba(153,153,153,.25);position:absolute;z-index:1;top:72px;left:-1px}
+.ncs-cart-popup dl{display:block}
+.ncs-cart-popup dl dt{font:lighter 16px/20px "Microsoft Yahei ";color:#333;text-align:center;width:100%;margin:10px 0 5px 0}
+.ncs-cart-popup dl dt a{font:10px/12px Verdana;color:#999;text-align:center;display:inline-block;width:12px;height:12px;float:right;margin:-5px 5px 0 0;cursor:pointer}
+.ncs-cart-popup dl dt a:hover{text-decoration:none;color:#333}
+.ncs-cart-popup dl dd{text-align:center;width:100%;margin:0 0 5px 0}
+.ncs-cti{margin-bottom:10px}
+.ncs-cti dd{overflow:hidden}
+.ncs-cti dd span{margin-right:10px;color:#999;white-space:nowrap}
+.ncs-cti dd span img{vertical-align:middle;display:inline-block;width:16px;height:16px;margin-right:4px}
+.ncs-handle{width:360px;height:24px;padding-top:10px;border-top:dotted 1px #EEE;position:absolute;z-index:1;left:20px;top:455px}
+.ncs-handle a{color:#777;background-color:#FFF;float:left;padding:1px 6px;margin-right:5px;border:solid 1px #F5F5F5;border-radius:4px}
+.ncs-handle a:hover{text-decoration:none;color:#333;background-color:#F5F5F5}
+.ncs-handle a.inform{float:right}
+.ncs-handle a.selected{color:#FFF;background-color:#F32613;border-color:#F32613}
+.ncs-handle a span{font-family:Arial;color:#AAA;margin-left:4px}
+.ncs-handle a.compare i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -100px -70px;vertical-align:middle;width:12px;height:12px;display:inline-block;margin-right:4px}
+.ncs-handle a.compare.selected i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -120px -70px;vertical-align:middle;width:12px;height:12px;display:inline-block;margin-right:4px}
+.ncs_share{background-color:#FAFAFA;display:inline-block;padding:5px 0;margin:10px 0 0 20px;border-radius:3px;position:relative;overflow:hidden;border:solid 1px #eee;box-shadow:0 0 0 2px rgba(204,204,204,.1);overflow:hidden;zoom:1}
+.ncs_share a{color:#005EA6;display:inline-block;height:20px;padding:0 8px;margin-left:-1px;border-left:solid 1px #eee}
+.ncs_share a i{font-size:14px;margin-right:4px;color:#999;vertical-align:middle}
+.ncs_share a em{font-weight:600;color:#999;vertical-align:middle;display:inline-block;margin-left:2px}
+.ncs_share a:hover em,.ncs_share a:hover i{text-decoration:none}
+.ncs-saleout{background-color:#FAFAFA;width:86%;padding:10px 20px;margin:20px 0;border:dotted 1px #eee}
+.ncs-saleout dt{font-size:16px!important;line-height:24px;font-weight:600;color:#F32613;width:auto;height:24px!important;margin:0!important}
+.ncs-saleout dt i{margin-right:6px}
+.ncs-saleout dd{color:#777;clear:both;line-height:20px!important;margin:6px 0!important;padding:0 0 0 18px!important}
+.ncs-bundling-tab{display:block;height:20px;padding:10px 0;margin-left:20px;overflow:hidden}
+.ncs-bundling-tab span{border-left:solid 1px #eee;margin-left:-1px}
+.ncs-bundling-tab span a{line-height:20px;padding:0 15px}
+.ncs-bundling-tab span.selected a{font-weight:600;color:#F32613}
+.ncs-bundling-container{background:#FFF;height:230px}
+.ncs-bundling-container ul.ncs-bundling-list{font-size:0;display:block;width:980px;height:230;float:left;margin:0;overflow:hidden}
+.ncs-bundling-container ul li{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;width:156px;padding:20px 20px 0 20px;margin:0;position:relative;z-index:1}
+.ncs-bundling-container .goods-thumb{background-color:#FFF;width:120px;height:120px;margin:0 auto}
+.ncs-bundling-container .goods-thumb a{line-height:0;background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:120px;height:120px;overflow:hidden}
+.ncs-bundling-container .goods-thumb img{max-width:120px;max-height:120px;margin-top:expression(120-this.height/2)}
+.ncs-bundling-container dl{display:block;padding:0;margin:4px 0 0 0}
+.ncs-bundling-container dl dt{line-height:18px;width:100%;height:36px;overflow:hidden}
+.ncs-bundling-container dl dt a{color:#555}
+.ncs-bundling-container dl dd{line-height:16px;color:#999;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.ncs-bundling-container dl dd .o-price{text-decoration:line-through}
+.ncs-bundling-container dl dd .b-price{font-weight:600;color:#F32613}
+.ncs-bundling-container .plus{background:url(../images/shop/2014_ncs_public_img.png) no-repeat 0 -130px;display:block;width:19px;height:19px;position:absolute;z-index:1;top:70px;left:-19px}
+.ncs-bundling-price{color:#777;background-color:#FAFAFA;display:block;width:177px;height:220px;float:right;padding:50px 15px 0 15px;margin-top:-40px;border-left:solid 1px #eee}
+.ncs-bundling-price ul li{line-height:28px;color:#777;white-space:nowrap;text-overflow:ellipsis;width:100%;padding:0!important;overflow:hidden}
+.ncs-bundling-price ul li strong{color:#005EA6;font-weight:600}
+.ncs-bundling-price ul li em{font-family:Arial}
+.ncs-bundling-price ul li .bundling-price{font-weight:600;color:#D00}
+.ncs-bundling-price ul li .bundling-save{color:#468C00}
+.ncs-combo-box{height:270px}
+.ncs-combo-box .default-goods{width:170px;padding:40px 19px 0 20px;float:left;position:relative;z-index:1}
+.ncs-combo-box .default-goods .goods-thumb{background-color:#FFF;width:140px;height:140px;margin:0 auto}
+.ncs-combo-box .default-goods .goods-thumb a{line-height:0;background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:140px;height:140px;overflow:hidden}
+.ncs-combo-box .default-goods .goods-thumb img{max-width:140px;max-height:140px;margin-top:expression(140-this.height/2)}
+.ncs-combo-box .default-goods dt{color:#555;line-height:18px;height:36px;margin-top:5px;overflow:hidden}
+.ncs-combo-box .default-goods .goods-price{font-weight:600;color:#D00}
+.ncs-combo-box .default-goods .plus{background:url(../images/shop/2014_ncs_public_img.png) no-repeat 0 -130px;display:block;width:19px;height:19px;position:absolute;z-index:1;top:100px;right:10px}
+.ncs-combo-box .ncs-combo-tab{display:block;height:20px;padding:10px 0;margin-left:20px;overflow:hidden}
+.ncs-combo-box .ncs-combo-tab span{border-left:solid 1px #eee;margin-left:-1px}
+.ncs-combo-box .ncs-combo-tab span a{line-height:20px;padding:0 15px}
+.ncs-combo-box .ncs-combo-tab span.selected a{font-weight:600;color:#F32613}
+.ncs-combo-box .combo-goods{width:779px;float:left}
+.ncs-combo-box .combo-goods-box{width:778px;height:210px;padding:10px 0;margin:0;border:solid #eee;border-width:1px 0 0 1px;position:relative;z-index:1}
+.ncs-combo-box .combo-goods-list{width:684px;height:210px;margin:0 47px;overflow:hidden;position:relative;z-index:1}
+.ncs-combo-box .combo-goods-list ul{font-size:0;white-space:nowrap;overflow:hidden;position:absolute;z-index:1;top:0;left:0}
+.ncs-combo-box .combo-goods-list li{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;width:130px;padding:10px 0 10px 18px;margin-right:27px;border:solid 1px transparent;position:relative;z-index:1}
+.ncs-combo-box .combo-goods-list li:hover{border:solid 1px #D00}
+.ncs-combo-box .combo-goods-list li .goods-thumb{background-color:#FFF;width:80px;height:80px;margin:0 auto}
+.ncs-combo-box .combo-goods-list li .goods-thumb a{line-height:0;background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:80px;height:80px;overflow:hidden}
+.ncs-combo-box .combo-goods-list li .goods-thumb img{max-width:80px;max-height:80px;margin-top:expression(80-this.height/2)}
+.ncs-combo-box .combo-goods-list li dl{margin-top:10px}
+.ncs-combo-box .combo-goods-list li dt{line-height:16px;white-space:normal;height:48px;overflow:hidden}
+.ncs-combo-box .combo-goods-list li dt a{color:#777}
+.ncs-combo-box .combo-goods-list li dd.goods-price{font-weight:600;color:#D00;margin-top:5px}
+.ncs-combo-box .combo-goods-list li dd.rp{color:#999;text-decoration:line-through}
+.ncs-combo-box .combo-goods-list li .checkbox{position:absolute;z-index:1;top:5px;right:5px}
+.ncs-combo-box .combo-goods-list li .plus{background:url(../images/shop/2014_ncs_public_img.png) no-repeat 0 -130px;display:block;width:19px;height:19px;position:absolute;z-index:1;top:45px;left:-20px}
+.ncs-combo-box .combo-goods-box .F-prev{background-color:#FFF;width:46px;height:229px;border-right:solid 1px #eee;position:absolute;z-index:2;top:0;left:0}
+.ncs-combo-box .combo-goods-box .F-next{background-color:#FFF;width:46px;height:229px;border-left:solid 1px #eee;position:absolute;z-index:2;top:0;right:0}
+.ncs-combo-box .combo-goods-box .F-prev i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -12px 0;display:block;width:10px;margin:105px 0 0 17px;height:20px;cursor:pointer;opacity:.5}
+.ncs-combo-box .combo-goods-box .F-next i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -22px 0;display:block;width:10px;margin:105px 0 0 17px;height:20px;cursor:pointer;opacity:.5}
+.ncs-combo-box .combo-goods-box .F-next:hover i,.ncs-combo-box .combo-goods-box .F-prev:hover i{opacity:1}
+.ncs-combo-box .combo-goods-box .no-slider i{opacity:.1!important;cursor:no-drop!important}
+.combo-price{color:#777;display:block;width:177px;height:220px;float:right;padding:50px 15px 0 15px;border-left:solid 1px #eee}
+.combo-price ul li{line-height:28px;color:#777;white-space:nowrap;text-overflow:ellipsis;width:100%;padding:0!important;overflow:hidden}
+.combo-price ul li strong{color:#005EA6;font-weight:600}
+.combo-price ul li em{font-family:Arial}
+.combo-price ul li .price{font-weight:600;color:#D00}
+.tabbar{background:#FFF}
+.ncs-goods-title-bar{background-color:#FFF}
+.ncs-goods-title-bar h4{font:400 14px/20px "Microsoft Yahei ";text-decoration:none;color:#777;display:block;margin:15px 15px 0 15px;padding:6px 15px 5px 15px;border-left:2px solid #f55}
+.ncs-goods-title-nav{margin-top:0}
+.ncs-goods-title-nav ul{font-size:0;background-color:#f7f7f7;border-bottom:solid #eee 1px;border-top:solid #eee 1px}
+.ncs-goods-title-nav ul li{vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block}
+.ncs-goods-title-nav ul li a{font:400 14px/36px "Microsoft Yahei ";text-decoration:none;color:#777;background-color:#f7f7f7;display:block;padding:0 15px;border-style:solid;border-color:#eee;border-width:0 1px 0 0}
+.ncs-goods-title-nav ul li a em{color:red;font-weight:700}
+.ncs-goods-title-nav ul li.current{margin:0 0 -1px -1px}
+.ncs-goods-title-nav ul li.current a{color:#333;background-color:#FFF;padding:0 30px;border-style:solid;border-color:#f55 #eee transparent #eee;border-width:2px 1px 0 1px}
+.ncs-goods-info-content{padding-bottom:23px}
+.ncs-goods-info-content .default{text-align:center}
+.ncs-goods-info-content .top{padding:9px;margin-bottom:20px;background:#fff}
+.ncs-promotion{margin-bottom:20px}
+.ncs-promotion .ncs-goods-info-content{padding:0;border:solid #eee;border-width:0 1px 1px;background-color:#FFF;}
+.phone-purchase{position:relative;zoom:1}
+.ncs-goods-title-nav .phone-purchase a{position:relative;zoom:1;padding:0 25px 0 38px;background-position:-24px -1243px;color:#c00}
+.ncs-goods-title-nav .phone-purchase .ico,.ncs-goods-title-nav .phone-purchase a{background:url(http://icon.zol-img.com.cn/newshop/shop/detail/youdian_v1/bg.png) no-repeat}
+.ncs-goods-title-nav .phone-purchase .ico{position:absolute;top:15px;right:16px;width:5px;height:3px;font:0/0 arial;background-position:0 -1241px}
+.phone-purchase .code{display:none;position:absolute;top:36px;left:-1px;padding:10px 14px;width:91px;border:1px solid #ededed;border-top-color:#fff;background:#fff;z-index:1}
+.phone-purchase .code img{display:block}
+.ncs-goods-title-nav .phone-purchase-hover .ico{background-position:0 -1254px}
+.phone-purchase-hover .code{display:block}
+.nc-goods-sort{font-size:0;background-color:#FFF;padding:10px 0;margin:0 5px 10px 5px;border-bottom:1px solid #eee}
+.nc-goods-sort li{font-size:12px;line-height:20px;letter-spacing:normal;word-spacing:normal;text-overflow:ellipsis;white-space:nowrap;display:inline-block;width:23%;padding:0 0 0 2%;margin:0;overflow:hidden}
+.bottom-template,.default,.top-template{padding:0;margin:0;border:0;overflow:hidden}
+.bottom-template img,.default img,.top-template img{vertical-align:top}
+#main-nav{width:auto}
+.ncs-goods-layout{width:100%;margin-bottom:10px;position:relative;z-index:1;overflow:hidden}
+.sticky #main-nav{width:980px;position:fixed;top:0;z-index:999}
+.sticky #main-nav ul{margin:0 auto}
+.switch-bar{background:transparent url(../images/shop/switch_bar.png) no-repeat -15px 0;width:13px;height:237px;position:absolute;z-index:999;top:200px;left:0}
+.switch-bar a{display:block;width:13px;height:42px;margin-top:97px;cursor:pointer}
+.switch-bar a:hover{text-decoration:none}
+.ncs-sidebar{display:none;width:210px _position:relative}
+.expanded .ncs-goods-main{float:right;width:980px;background:#fff;border-style:solid;border-width:0 1px 1px 1px;border-color:#eee;}
+.expanded .main-left{float:left;width:790px;background:#fff}
+.expanded .main-right{float:right;width:188px;background:#fafafa}
+.sticky .main-right{position:fixed;top:36px;left:50%;margin:0 0 0 410px;float:none;z-index:49;overflow:hidden}
+.expanded .switch-bar{background-position:0 0;left:-13px}
+.expanded .ncs-sidebar{width:210px;display:block;float:left}
+.zs-quick-menu{margin:20px 0;padding:0 30px;overflow:hidden;zoom:1}
+.zs-quick-menu ul{margin:-14px 0}
+.zs-quick-menu li{height:45px;font:14px/45px "Microsoft YaHei ", " \5FAE \8F6F \96C5 \9ED1 ";vertical-align:middle}
+.zs-quick-menu a{display:block;padding:0 0 0 22px;background:url(../images/quick-menu.png) no-repeat;color:#333;vertical-align:baseline}
+.zs-quick-menu .cur a,.zs-quick-menu a:hover{background-position:0 -45px;color:#c00;text-decoration:none}
+.ncs-store-map-content{margin:20px;overflow:hidden}
+.ncs-store-map-baidu{float:left}
+.ncs-store-map-info{width:300px;height:400px;float:right;padding-left:20px;border-left:solid 1px #eee}
+.ncs-store-map-info .store-district{font-size:16px;margin-bottom:20px}
+.ncs-store-map-info .address-box{width:100%;height:360px;position:relative;z-index:1;overflow:hidden}
+.ncs-store-map-info .address-list dl{border:solid 1px #eee;padding-bottom:5px;margin-bottom:10px}
+.ncs-store-map-info .address-list dt{font-size:12px;line-height:20px;font-weight:600;background-color:#FAFAFA;padding:2px 10px;border-bottom:solid 1px #eee}
+.ncs-store-map-info .address-list dd{font-size:12px;line-height:20px;margin:5px 10px 0 10px}
+.ncs-comment .rate{line-height:20px;color:#F32613;vertical-align:middle;display:inline-block;margin:10px 40px 10px 20px}
+.ncs-comment .rate strong{font:lighter 40px/40px arial;vertical-align:bottom}
+.ncs-comment .rate sub{font:16px/20px arial;vertical-align:bottom;margin-right:6px}
+.ncs-comment .rate span{color:#999;display:block;clear:both}
+.ncs-comment .percent{vertical-align:middle;display:inline-block}
+.ncs-comment .percent dl{font-size:0}
+.ncs-comment .percent dt{font-size:12px;line-height:20px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;width:80px;height:20px}
+.ncs-comment .percent dt em{color:#999;margin-left:4px}
+.ncs-comment .percent dd{background-color:#F5F5F5;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;width:100px;height:14px;margin:3px 0}
+.ncs-comment .percent dd i{background-color:#F32613;display:block;height:14px}
+.ncs-comment .btns{vertical-align:middle;display:inline-block;height:60px;padding-left:30px;margin-left:300px;border-left:dotted 1px #eee}
+.ncs-commend-main{padding:20px 0 0 0;background:#fff}
+.ncs-commend-floor{margin:0 40px 0 60px;border-left:solid 3px #F5F5F5;position:relative;z-index:1}
+.ncs-commend-floor .user-avatar{background-color:#F2F2F2;width:40px;height:40px;border-radius:20px;position:absolute;z-index:1;top:0;left:-20px}
+.ncs-commend-floor .user-avatar a{text-align:center;vertical-align:middle;display:table-cell;width:40px;height:40px;border-radius:20px;overflow:hidden}
+.ncs-commend-floor .user-avatar a img{max-width:40px;max-height:40px;margin-top:expression(40-this.height/2);border-radius:20px}
+.ncs-commend-floor .detail{margin:10px 0 0 30px}
+.ncs-commend-floor .detail dt{line-height:24px;display:block;height:24px;margin-bottom:10px;overflow:hidden}
+.ncs-commend-floor .detail dt .user-name{font:700 12px/20px "Microsoft Yahei ";color:#AAA;float:left}
+.ncs-commend-floor .detail dt .goods-raty{color:#777;float:right}
+.ncs-commend-floor .detail dd{font-size:14px;line-height:18px;color:#555;margin-bottom:10px}
+.ncs-commend-floor .detail .photos-thumb{font-size:0;vertical-align:middle;display:inline-block}
+.ncs-commend-floor .detail .photos-thumb li{vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;text-align:center;width:34px;margin-right:6px}
+.ncs-commend-floor .detail .photos-thumb a{line-height:0;background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:30px;height:30px;padding:1px;border:solid 1px #eee;overflow:hidden}
+.ncs-commend-floor .detail .photos-thumb a:hover{border-color:#F32613}
+.ncs-commend-floor .detail .photos-thumb a img{max-width:30px;max-height:30px;margin-top:expression(30-this.height/2)}
+.ncs-commend-floor .detail .pubdate{font-size:12px;color:#AAA}
+.ncs-commend-floor .detail .explain{font-size:12px;color:#DA542E;background-color:#FFC;padding:9px;border:dashed 1px #FEF4B1}
+.ncs-commend-floor .detail hr{font-size:0;line-height:0;padding:0;margin:10px 0;height:0;width:100%;border:none 0;border-top:dashed 1px #eee}
+.more-commend{text-decoration:underline!important;position:absolute;z-index:1;top:10px;left:30px;color:#F32613}
+.ncg-salelog .price{background-color:#FFF}
+.ncg-salelog .price strong{font:600 14px/20px arial;color:#F32613;margin:0 4px}
+.ncg-salelog .price span{line-height:16px;color:#FFF;background-color:#C8C8C8;vertical-align:middle;display:inline-block;height:16px;padding:1px 4px;margin-left:20px}
+.ncg-salelog .bd table{background-color:#FFF}
+.ncg-salelog .bd thead th{font-weight:600;text-align:center;padding:8px 0;border-bottom:solid 2px #E7E7E7}
+.ncg-salelog .bd tbody td{text-align:center;padding:15px 0;border-bottom:dashed 1px #E7E7E7}
+.ncs-cosult-tips{width:780px;height:65px;float:left;margin:10px 0 5px 10px;position:relative;z-index:1}
+.ncs-cosult-tips i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -80px 0;width:147px;height:65px;position:absolute;z-index:1;top:0;left:0}
+.ncs-cosult-tips p{line-height:18px;color:#9B827D;width:700px;height:36px;position:absolute;z-index:1;top:28px;left:64px}
+.ncs-cosult-askbtn{float:right;padding:10px}
+.ncs-cosult-main{padding:20px 0 0 0}
+.ncs-cosult-main .more{margin:10px 15px}
+.ncs-cosult-list{padding:6px;border-bottom:dotted 1px #D6D6D6}
+.ncs-cosult-list dl{font-size:0;display:block;margin-bottom:4px}
+.ncs-cosult-list dl.asker{color:#999}
+.ncs-cosult-list dl.ask-con{color:#555}
+.ncs-cosult-list dl.reply{color:#F32613}
+.ncs-cosult-list dt{font-size:12px;line-height:20px;vertical-align:top;letter-spacing:normal;word-spacing:normal;text-align:right;display:inline-block;width:7%}
+.ncs-cosult-list dd{font-size:12px;line-height:20px;vertical-align:top;letter-spacing:normal;word-spacing:normal;text-align:left;display:inline-block;width:93%}
+.ncs-cosult-list dd p{display:inline-block;width:760px}
+.ncs-cosult-list dd time{text-align:right;display:inline-block;color:#999}
+.ncs-consult-form{display:block;padding:10px 15px;border:solid #eee;border-width:0 1px 1px;background:#fff}
+.ncs-consult-form dl{font-size:0;margin-bottom:4px}
+.ncs-consult-form dd,.ncs-consult-form dt{font-size:12px;line-height:20px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block}
+.ncs-consult-form dt{font-weight:600;width:65px}
+.ncs-consult-form dd{position:relative;z-index:1}
+.ncs-consult-type-intro{margin-bottom:4px}
+.ncs-consult-form label{font-size:12px;vertical-align:top;display:inline-block;margin-right:20px}
+.ncs-consult-form label .text{display:inline-block;vertical-align:middle;padding:2px 4px}
+.ncs-consult-form label .radio{display:inline-block;vertical-align:middle;margin-right:4px}
+.ncs-consult-form label img{display:inline-block;vertical-align:middle;margin:0 4px;cursor:pointer}
+.ncs-consult-form label span{color:#09C}
+.ncs-consult-form .counter{line-height:20px;color:#999;vertical-align:top;display:inline-block;margin-left:10px}
+.ncs-consult-form .counter em{font-weight:700;margin:0 2px}
+.ncs-consult-form .counter em.warning{color:#F60;background-color:transparent;width:auto;padding:0;border:none}
+.ncs-consult-form .counter em.exceeded{color:red}
+.ncs-consult-form .code{background-color:#FFF;width:114px;height:34px;border:solid 1px #555;position:absolute;z-index:9;top:-40px;left:-15px;display:none;box-shadow:0 3px 3px 0 rgba(0,0,0,.2)}
+.ncs-consult-form .code .arrow{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -40px 0;display:block;width:14px;height:7px;position:absolute;left:21px;bottom:-7px}
+.ncs-consult-form .code img{width:90px;height:26px;position:absolute;z-index:1;top:4px;left:4px}
+.ncs-consult-form .code .close{display:block;width:10px;height:10px;padding:1px;position:absolute;z-index:1;top:4px;right:4px}
+.ncs-consult-form .code .change:hover,.ncs-consult-form .code .close:hover{background-color:#CCC;border-radius:5px;-webkit-border-radius:5px}
+.ncs-consult-form .code .close i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -40px -7px;display:block;width:10px;height:10px;opacity:.5}
+.ncs-consult-form .code .change{display:block;width:10px;height:10px;padding:1px;position:absolute;z-index:1;bottom:4px;right:4px}
+.ncs-consult-form .code .change i{background:url(../images/shop/2014_ncs_public_img.png) no-repeat -50px -7px;display:block;width:10px;height:10px;opacity:.5}
+.ncs-consult-form .code .change:hover i,.ncs-consult-form .code .close:hover i{opacity:1}
+.ncs-recommend{clear:both;margin:10px 0;border:1px solid #ededed;background:#fff}
+.ncs-recommend .title{background:#F7F7F7;border-bottom:1px solid #eee;}
+.ncs-recommend .title h4{color:#333;background-color:#FFF;padding:0 30px;margin-bottom:-1px;border-style:solid;border-color:#f55 #eee transparent #eee;border-width:2px 1px 0 0px;height:32px;line-height:32px;text-align:center;font-size:14px;width:56px;}
+.ncs-recommend .content{overflow:hidden}
+.ncs-recommend .content ul{font-size:0;white-space:nowrap;padding:0 0 5px 0;margin-left:15px}
+.ncs-recommend .content ul li{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;padding:20px 22px 22px;width:150px}
+.ncs-recommend .content ul li dl{text-align:center;width:100%;padding-top:150px;margin:0 auto;position:relative;z-index:1}
+.ncs-recommend .content ul li .goods-pic{background:#FFF;width:150px;height:150px;margin-left:-75px;position:absolute;top:0;left:50%}
+.ncs-recommend .content ul li .goods-pic a{background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:150px;height:150px;overflow:hidden}
+.ncs-recommend .content ul li .goods-pic a img{max-width:150px;max-height:150px;margin-top:expression(150-this.height/2)}
+.ncs-recommend .content ul li .goods-name{line-height:18px;white-space:pre-wrap;height:36px;width:90%;overflow:hidden;margin:8px auto}
+.ncs-recommend .content ul li .goods-name em{color:#F32613}
+.ncs-recommend .content ul li .goods-price{font-weight:600;color:#F32613;height:20px;font-size:18px}
+.hao-look-look .content{overflow:hidden}
+.hao-look-look .content ul{font-size:0}
+.hao-look-look .content ul li{font-size:12px;vertical-align:top;letter-spacing:normal;word-spacing:normal;display:inline-block;padding:20px 22px 22px;width:163px;border-bottom:dotted 1px #eee}
+.hao-look-look .content ul li dl{text-align:center;width:100%;padding-top:150px;margin:0 auto;position:relative;z-index:1}
+.hao-look-look .content ul li .goods-pic{background:#FFF;width:150px;height:150px;margin-left:-75px;position:absolute;top:0;left:50%}
+.hao-look-look .content ul li .goods-pic a{background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:150px;height:150px;overflow:hidden}
+.hao-look-look .content ul li .goods-pic a img{max-width:150px;max-height:150px;margin-top:expression(150-this.height/2)}
+.hao-look-look .content ul li .goods-name{line-height:18px;white-space:pre-wrap;height:36px;width:90%;overflow:hidden;margin:8px auto}
+.hao-look-look .content ul li .goods-name em{color:#F32613}
+.hao-look-look .content ul li .goods-price{font-weight:600;color:#F32613;height:20px;font-size:18px}
+.ncs-norecord{color:#999;text-align:center;height:70px;line-height:70px;padding:15px 0;background-color:#FFF;border:none!important}
+.ncs-sidebar-container{margin-bottom:10px;background:#fff}
+.ncs-sidebar-container .title{height:32px;padding:0 10px;border:solid #eee;border-width:1px 1px 0 1px}
+.ncs-sidebar-container .title h4{font:14px/32px "Microsoft YaHei ", " \5FAE \8F6F \96C5 \9ED1 ";color:#333}
+.ncs-sidebar-container .content{border:solid 1px #eee;background:#FFF}
+.ncs-info{width:210px;}
+.ncs-info .title{background-color:#F5F5F5;padding:6px;border:solid 1px #E6E6E6;}
+.ncs-info .title h4{font:600 14px/20px "Microsoft Yahei ";color:#555;}
+.ncs-detail .store-logo{padding:5px;margin:0 auto;max-height: 60px; max-width: 200px;}
+.ncs-detail .store-logo img {max-height: 60px; max-width: 200px;}
+.ncs-info .title .name{display:inline-block;font-size:14px;height:20px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap;width:162px;}
+.ncs-info .title em{font-size:12px;vertical-align:middle;background:#e4393c;border-radius:3px;color:#fff;display:inline-block;font-family:simsun;height:18px;line-height:20px;text-align:center;width:30px;}
+
+.ncs-info .content dl { font-size:0; display:block; padding:4px; font-family:"Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"!important }
+.ncs-info .content dl dt { font-size:12px; color:#999; vertical-align:top; letter-spacing:normal; word-spacing:normal; text-align:right; display:inline-block; width:68px }
+.ncs-info .content dl dd { font-size:12px; color:#333; vertical-align:top; letter-spacing:normal; word-spacing:normal; white-space:nowrap; text-overflow:ellipsis; display:inline-block; width:130px; overflow:hidden; zoom:1 }
+.ncs-info .all-rate .rating { background:url(../images/2014grate.png) no-repeat 0 -18px; vertical-align:middle; display:inline-block; width:79px; height:17px }
+.ncs-info .all-rate .rating span { background:url(../images/2014grate.png) no-repeat 100% 0; display:block; height:18px }
+.ncs-info .all-rate em { color:#DA542E; font-weight:600; vertical-align:middle; margin-right:2px }
+.ncs-info .content .detail-rate { clear:both }
+.ncs-info .store-name { font-weight:600; color:#555; height:20px; padding:6px 9px; border-bottom:solid 1px #eee }
+.ncs-detail-rate { color:#999; width:182px; padding:5px; margin:0 auto }
+.ncs-detail-rate ul { font-size:0; padding:5px 0 }
+.ncs-detail-rate li { font-size:12px; color:#333; vertical-align:top; text-align:center; display:inline-block; width:33.333%; height:32px }
+.ncs-detail-rate li h5 { color:#777; line-height:16px; height:16px }
+.ncs-detail-rate li div { line-height:16px; height:16px }
+.ncs-detail-rate .credit { color:#555; display:inline-block; width:35px; margin-left:4px }
+.ncs-detail-rate li div i { background:url(../images/2014grate.png) no-repeat; vertical-align:middle; display:inline-block; width:16px; height:16px }
+.ncs-detail-rate .high { color:#DA542E }
+.ncs-detail-rate .high i { background-position:0 -40px }
+.ncs-detail-rate .equal { color:#DA542E }
+.ncs-detail-rate .equal i { background-position:-32px -40px }
+.ncs-detail-rate .low { color:#28B779 }
+.ncs-detail-rate .low i { background-position:-16px -40px }
+.ncs-info .btns{font-size:0;text-align:center;padding:0 4px;}
+.ncs-info .btns a{width:80px;margin:3px 6px;border-radius:2px;font-size:12px;line-height:20px;color:#666;background-color:#f9f9f9;vertical-align:top;text-align:center; float:left; height:20px;padding:3px;border:solid 1px #cdcdcd}
+.ncs-info .btns a span{line-height:20px;color:#999;margin-left:3px;font-size:12px}
+.ncs-info .btns a:hover{text-decoration:none;background:#F5F5F5}
+
+.ncs-info .no-border { border:0!important; padding-bottom:0!important }
+.ncs-message-bar .default { padding:9px; border-top:solid 1px #eee; margin-top:-1px }
+.ncs-message-bar .default h5 { line-height:20px; font-weight:600; display:inline-block }
+.ncs-message-bar .default span { color:#555; height:20px }
+.ncs-message-bar dl { width:192px; padding:9px; overflow:hidden }
+.ncs-message-bar dt { line-height:30px; color:#333; border:1px solid #f5f5f5; padding-left:10px; padding-right:50px; display:block }
+.ncs-message-bar dd { color:#555; margin-left:10px; padding:4px 0!important; width:80px!important; vertical-align:top!important; letter-spacing:normal!important; word-spacing:normal!important; display:inline-block!important }
+.ncs-message-bar dd span { line-height:22px; margin:0 6px 0 0 }
+.ncs-message-bar dd img { vertical-align:middle }
+.ncs-message-bar dd p { line-height:20px }
+.ncs-message-bar dl.workingtime dd { width:100%!important }
+.ncs-search{display:block;padding:5px;border-bottom:dotted 1px #eee}
+.ncs-class-bar p{background-color:#fff;border-bottom:solid 1px #E7E7E7;height:28px}
+.ncs-class-bar p span{text-align:center;display:inline-block;width:24%;height:20px;padding:4px 0}
+.ncs-class-bar p a{line-height:16px;color:#777;padding:2px}
+.ncs-class-bar p a:hover{text-decoration:none;color:#FFF;background-color:#999;border-radius:4px}
+.ncs-submenu{width:170px;margin:5px 13px 5px 15px}
+.ncs-submenu li{font-weight:600;text-align:left;margin:6px 0;clear:both}
+.ncs-submenu li a{line-height:20px;word-wrap:break-word;display:inline-block;max-width:135px;color:#333;overflow:hidden}
+.ncs-submenu li ul{width:150;margin:5px 0 5px 20px}
+.ncs-submenu li ul li{line-height:20px;font-weight:400;text-align:left;margin:4px 0}
+.ico-block,.ico-none,.ico-sub{display:inline-block;float:left;cursor:default}
+.ico-block,.ico-none{width:10px;height:10px;text-align:center;margin:5px 10px 5px 0;border-radius:2px}
+.ico-block em,.ico-none em{font-size:12px;line-height:10px!important;height:10px}
+.ico-sub{font-size:0;line-height:0;width:3px;height:3px;margin:8px 6px 8px 0;border-radius:3px}
+.ncs-mall-category-list{font-size:0;padding:4px 0}
+.ncs-mall-category-list li{font-size:12px;text-overflow:ellipsis;white-space:nowrap;display:inline-block;width:40%;padding:2px 5%;overflow:hidden}
+.ncs-mall-brand-list{font-size:0;padding:4px 0}
+.ncs-mall-brand-list li{font-size:12px;text-overflow:ellipsis;white-space:nowrap;display:inline-block;width:28.33%;padding:4px 2% 4px 3%;overflow:hidden}
+.ncs-mall-booth-list{padding:9px;overflow:hidden}
+.ncs-mall-booth-list li{display:block;margin-bottom:5px;padding-top:5px;position:relative;z-index:1}
+.ncs-mall-booth-list .goods-pic{width:120px;height:120px;padding:0;margin:0 auto}
+.ncs-mall-booth-list .goods-pic a{line-height:0;text-align:center;vertical-align:middle;display:table-cell;width:120px;height:120px;overflow:hidden}
+.ncs-mall-booth-list .goods-pic img{max-width:120px;max-height:120px;margin-top:expression( 120-this.height/2)}
+.ncs-mall-booth-list .goods-name{max-height:36px;overflow:hidden}
+.ncs-mall-booth-list .goods-price{font-weight:600;color:#F32613;text-align:center;padding:0}
+.ncs-mall-booth-list li p{width:80px;margin:0 10px;float:left;display:inline}
+.ncs-mall-booth-list li p a{display:block;width:78px;height:78px;overflow:hidden;border:1px solid #bbb}
+.ncs-mall-booth-list li p a:hover{border:1px solid #999}
+.ncs-mall-booth-list h3{width:90px;float:right}
+.ncs-mall-booth-list h3 a{display:block;width:90px;height:48px;line-height:16px;overflow:hidden;font-weight:400;color:#666;text-decoration:none;font-size:12px;margin-bottom:10px}
+.ncs-mall-booth-list h3 a:hover{text-decoration:underline;color:#f60}
+.ncs-mall-booth-list h3 span{display:block;color:#fe5504;font-weight:700;font-size:14px}
+.ncs-top-tab{padding:0 15px}
+.ncs-top-tab li{float:left}
+.ncs-top-tab li a{float:left;width:84px;height:33px;border-bottom:1px solid #eee;font:14px/33px "Microsoft YaHei ", " \5FAE \8F6F \96C5 \9ED1 ";text-align:center;cursor:pointer}
+.ncs-top-tab li.current a{border-bottom:1px solid #f60}
+.ncs-top-bar .hide{display:none}
+.ncs-top-panel{display:block;margin:1px}
+.ncs-top-panel li{display:block;padding:8px 12px 8px 4px;clear:both;margin-top:-1px;border-bottom:dashed 1px #E7E7E7}
+.ncs-top-panel li:hover{background-color:#F7F7F7;z-index:1}
+.ncs-top-panel dl{display:block;height:60px;position:relative;z-index:1}
+.ncs-top-panel dl:hover{z-index:9}
+.ncs-top-panel dt{line-height:16px;text-overflow:ellipsis;overflow:hidden;font:12px/18px arial;white-space:nowrap;display:block;width:130px;height:16px;position:absolute;z-index:1;top:0;left:70px}
+.ncs-top-panel dd.goods-pic{background-color:#FFF;display:block;width:62px;height:62px;position:absolute;z-index:999;top:0;left:0}
+.ncs-top-panel dd.goods-pic a{border:solid 1px #E7E7E7;width:60px;height:60px;display:inline-block}
+.ncs-top-panel dd.goods-pic p{background-color:#FFF;display:none;width:100px;height:100px;padding:4px;border:solid 1px #F60;position:absolute;z-index:2;top:-10px;left:58px;box-shadow:2px 2px 0 rgba(0,0,0,.2)}
+.ncs-top-panel dd.goods-pic p big{font-size:0;line-height:0;width:0;height:0;display:block;border:4px solid;border-color:transparent #F60 transparent transparent;position:absolute;z-index:2;top:18px;left:-9px}
+.ncs-top-panel dd.goods-pic p small{font-size:0;line-height:0;width:0;height:0;display:block;border:4px solid;border-color:transparent #FFF transparent transparent;position:absolute;z-index:2;top:18px;left:-8px}
+.ncs-top-panel dd.goods-pic:hover p{display:block}
+.ncs-top-panel dd.goods-pic:hover a{border-color:#F60}
+.ncs-top-panel dd.price{line-height:16px;background:url(../images/shop/public.png) no-repeat 0 -80px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;padding-left:10px;width:110px;height:16px;position:absolute;z-index:1;top:18px;left:70px;font:700 14px/22px Verdana;color:#f4214c}
+.ncs-top-panel dd.selled{line-height:16px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100px;height:16px;position:absolute;z-index:1;top:40px;left:70px;font:12px/18px arial}
+.ncs-top-panel dd.selled strong{margin:0 3px;color:#c97;font-weight:700}
+.ncs-top-panel dd.collection{line-height:16px;float:left;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100px;height:16px;position:absolute;z-index:1;top:40px;left:70px;font:12px/18px arial}
+.ncs-top-panel dd.collection strong{margin:0 3px}
+.ncs-top-bar p{width:130px;margin:10px auto}
+.ncs-top-bar p a{line-height:38px;color:#333;text-align:center;width:128px;height:38px;border:solid 1px #fafafa;border-radius:5px;display:inline-block}
+.ncs-top-bar p a:hover{text-decoration:none;color:#777}
+.ncs-comment-goods{width:180px;margin:10px auto}
+.ncs-comment-goods .goods-name{font:700 12px/18px "Microsoft Yahei ";color:#AAA;width:100%;height:36px;overflow:hidden}
+.ncs-comment-goods .goods-pic{width:160px;height:160px;margin:5px auto}
+.ncs-comment-goods .goods-pic a{line-height:0;background-color:#FFF;text-align:center;vertical-align:middle;display:table-cell;width:160px;height:160px;overflow:hidden}
+.ncs-comment-goods .goods-pic img{max-width:160px;max-height:160px;margin-top:expression(160-this.height/2)}
+.raty{font-size:0;line-height:0;vertical-align:middle;display:inline-block;zoom:1}
+.raty img{letter-spacing:normal;word-spacing:normal;display:inline-block;width:16px;height:16px;margin:2px 0}
+.delivery-map{background-color:#FFF;text-align:center;width:760px;margin:0 auto;border-radius:10px}
+.delivery-map img{margin:10px}

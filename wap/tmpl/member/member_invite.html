@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1"/>
+    <title>邀请返利</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/nctouch_member.css">
+
+</head>
+<body>
+<header id="header">
+    <div class="header-wrap">
+        <div class="header-l"><a href="javascript:history.go(-1)"> <i class="back"></i> </a></div>
+        <div class="header-title">
+            <h1>邀请返利</h1>
+        </div>
+        <div class="header-r"><a href="javascript:void(0);" id="header-nav"><i class="more bgc-t"></i><sup></sup></a></div>
+    </div>
+    <div class="nctouch-nav-layout">
+        <div class="nctouch-nav-menu"><span class="arrow"></span>
+            <ul>
+                <li><a href="../../index.html"><i class="home"></i>首页</a></li>
+                <li><a href="../search.html"><i class="search"></i>搜索</a></li>
+                <li><a href="../product_first_categroy.html"><i class="categroy"></i>分类</a></li>
+                <li><a href="javascript:void(0);"><i class="message"></i>消息</a></li>
+                <li><a href="../cart_list.html"><i class="cart"></i>购物车<sup></sup></a></li>
+                <li><a href="../member/member.html"><i class="member"></i>我的商城</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="nctouch-main-layout feedback">
+    <div class="nctouch-asset-info">
+        <div class="container voucher"><i class="icon"></i>
+            <dl class="rule">
+                <dd>1.成功邀请一个好友，可获100积分奖励；</dd>
+                <dd>2.当好友成功购买了商品，可获得10%返利积分</dd>
+                <dd>例如：好友购买100元商品，您可获得10积分奖励</dd>
+            </dl>
+        </div>
+    </div>
+    <div style="font-size: 16px; padding: 10px; margin-top:10px;text-align: center;">
+        您的邀请二维码：
+    </div>
+    <div style="width:150px;margin:0 auto; padding-bottom:10px;text-align: center;">
+        <a href="javascript:;" id="download_url" title="保存二维码"><img id="myurl_src" src="" style="width:150px; height:150px"/></a>点击二维码可以保存哦
+    </div>
+
+    <div style="font-size: 16px; text-align: center; padding: 10px; text-align: center;">
+        您的邀请链接：
+    </div>
+    <textarea id="myurl" class="textarea" style="height: 1rem; font-size: 0.8rem;"></textarea>
+    <a href="javascript:setTxt();" class="btn-l" id="feedbackbtn">复制邀请网址</a>
+</div>
+<footer id="footer" class="bottom"></footer>
+<script type="text/javascript" src="../../js/config.js"></script>
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/template.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ncscroll-load.js"></script>
+<script type="text/javascript" src="../../js/tmpl/member_invite.js"></script>
+<script type="text/javascript" src="../../js/tmpl/footer.js"></script>
+</body>
+</html>
+
+<script>
+    function setTxt() {
+        var t = document.getElementById("myurl");
+        t.select();
+        window.clipboardData.setData('text', t.createTextRange().text);
+        alert("复制成功");
+    }
+</script>

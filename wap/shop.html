@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>所有店铺</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/nctouch_products_list.css">
+<link rel="stylesheet" type="text/css" href="css/nctouch_member.css">
+<link rel="stylesheet" type="text/css" href="css/nctouch_common.css">
+<style type="text/css">
+.nctouch-footer-wrap { margin:0 auto; max-width:640px;}
+.nctouch-inp-con ul li h4 { width:4.6rem; text-align:left}
+.nctouch-inp-con ul li h4 i {background-image: url("images/location_b.png");background-position: 50% 50%;background-repeat: no-repeat;background-size: 80% auto;display: block;height: 0.9rem;position: absolute;right: 0.2rem;top: 0.55rem;width: 0.8rem; z-index: 1;}
+.nctouch-order-search {position: relative;}
+.nctouch-inp-con ul li .input-box .input-del { display: block;}
+.nctouch-inp-con ul li .input-box { margin:0 0.5rem 0 4.4rem}
+</style>
+</head>
+<body>
+<header id="header" class="fixed fixed-Width">
+  <div class="header-wrap">
+  	<div class="header-l"><a href="javascript:history.go(-1)"><i class="back"></i></a></div>
+    <div class="header-tab"><a href="shop.html" class="cur">所有店铺</a><a href="shop_class.html">店铺分类</a></div>
+    <div class="header-r"> <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a> </div>
+  </div>
+  <div class="nctouch-nav-layout">
+    <div class="nctouch-nav-menu"> <span class="arrow"></span>
+      <ul>
+        <li><a href="index.html"><i class="home"></i>首页</a></li>
+        <li><a href="tmpl/search.html"><i class="search"></i>搜索</a></li>
+        <li><a href="tmpl/product_first_categroy.html"><i class="categroy"></i>分类</a></li>
+        <li><a href="tmpl/cart_list.html"><i class="cart"></i>购物车<sup></sup></a></li>
+        <li><a href="javascript:void(0);"><i class="message"></i>消息<sup></sup></a></li>
+        <li><a href="tmpl/member/member.html"><i class="member"></i>我的商城</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="nctouch-main-layout fixed-Width">
+ <div class="nctouch-inp-con">
+      <ul class="form-box">
+<li class="form-item">
+          <h4>店铺所在地：<i></i></h4>
+          <div class="input-box">
+            <input name="area_info" type="text" class="inp" id="area_info" autocomplete="off" onChange="btn_check($('form'));" placeholder="请选择店铺地区" readonly />  <span class="input-del"></span>
+          </div>
+        </li>
+</ul>
+</div>
+
+<div class="nctouch-order-search">
+      <span><input type="text" oninput="writeClear($(this));" id="keyword" name="keyword" placeholder="输入店铺名称" maxlength="50" autocomplete="on">
+      <span class="input-del"></span></span>
+      <input type="button" value="&nbsp;" id="serach_store">
+  </div>
+      <ul class="favorites-store-list" id="categroy-cnt"></ul>
+</div>
+<div class="pagination mt10" id="pagelist">
+				<a href="javascript:void(0);" class="pre-page disabled">上一页</a>
+				<select name="page_list">
+
+				</select>
+				<a href="javascript:void(0);" class="next-page ">下一页</a>
+			</div>
+			
+<footer id="footer"></footer>
+</body>
+<input type="hidden" name="key" value="4">
+<input type="hidden" name="order" value="1">
+<input type="hidden" name="page" value="10">
+<input type="hidden" name="curpage" value="1">
+<input type="hidden" name="hasmore">
+<input type="hidden" name="sc_id" value="">
+</body>
+<script type="text/html" id="category-one">
+    <%if(store_list.length>0){%>
+        <% for (var k in store_list) { var v = store_list[k]; %>
+        <li id="favitem_<%=v.store_id %>">
+            <a href="tmpl/store.html?store_id=<%=v.store_id %>">
+                <div class="store-avatar"><img src="<%=v.store_avatar_url %>"/></div>
+                <dl class="store-info">
+                    <dt class="store-name"><%=v.store_name %></dt>
+                    <dd><span>粉丝：<em><%=v.store_collect %></em>人</span></dd>
+                </dl>
+            </a>
+        </li>
+        <%}%>
+    <%}else{%>
+	<style type="text/css">.pagination{ display: none;}</style>
+    <div class="nctouch-norecord favorite-store">
+        <div class="norecord-ico"><i></i></div>
+        <dl>
+            <dt>没有店铺</dt>
+            <dd>可以去看看其它的吧</dd>
+        </dl>
+        <a href="<%=WapSiteUrl%>" class="btn">随便逛逛</a>
+    </div>
+    <%}%>
+</script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/simple-plugin.js"></script> 
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/shop.js"></script>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+<title>我的代金券</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css">
+<link rel="stylesheet" type="text/css" href="../../css/nctouch_member.css">
+</head>
+<body>
+<header id="header">
+  <div class="header-wrap">
+    <div class="header-l"><a href="member.html"><i class="back"></i></a></div>
+    <span class="header-tab"> <a href="javascript:void(0);" class="cur">我的代金券</a> <a href="voucher_pwex.html">领取代金券</a> </span>
+    <div class="header-r"> <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a> </div>
+  </div>
+  <div class="nctouch-nav-layout">
+    <div class="nctouch-nav-menu"> <span class="arrow"></span>
+      <ul>
+        <li><a href="../../index.html"><i class="home"></i>首页</a></li>
+        <li><a href="../search.html"><i class="search"></i>搜索</a></li>
+        <li><a href="../product_first_categroy.html"><i class="categroy"></i>分类</a></li>
+        <li><a href="javascript:void(0);"><i class="message"></i>消息<sup></sup></a></li>
+        <li><a href="../cart_list.html"><i class="cart"></i>购物车<sup></sup></a></li>
+        <li><a href="../member/member.html"><i class="member"></i>我的商城</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="nctouch-main-layout">
+  <div class="nctouch-voucher-list">
+    <ul class="nctouch-tickets" id="voucher-list">
+    </ul>
+  </div>
+</div>
+<div class="fix-block-r"> <a href="javascript:void(0);" class="gotop-btn gotop hide" id="goTopBtn"><i></i></a> </div>
+<footer id="footer" class="bottom"></footer>
+<script type="text/html" id="voucher-list-tmpl">
+<% if (voucher_list && voucher_list.length > 0) { %>
+<% for (var k in voucher_list) { var v = voucher_list[k]; %>
+	<li class="ticket-item <% if (v.voucher_state == 1) { %>normal<% }else{ %>invalid<%}%>">
+		<% if (v.is_own_shop) { %>
+		<a href="../product_list.html">
+		<% }else{ %>
+		<a href="../store.html?store_id=<%= v.store_id %>">
+		<% } %>
+		<div class="border-left"></div>
+		<div class="block-center">
+			<div class="store-info">
+				<div class="store-avatar"><img src="<%= v.store_avatar_url %>" /></div>
+				<dl>
+					<dt class="store-name"><%= v.store_name %></dt>
+					<dd>有效期至：<%= v.voucher_end_date_text %></dd>
+				</dl>
+			</div>
+			<div class="ticket-info">
+				<div class="bg-ico"></div>
+				<% if (v.voucher_state==2) { %>
+				<div class="watermark ysy"></div>
+				<% } %>
+				<% if (v.voucher_state==3 || v.voucher_state==4) { %>
+				<div class="watermark ysx"></div>
+				<% } %>
+				<dl>
+				<dt>￥<%= v.voucher_price %></dt>
+				<dd><% if (v.voucher_limit) { %>满<%= v.voucher_limit %>使用<% } %></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="border-right"></div>
+		</a>
+	</li>
+<% } %>
+<li class="loading"><div class="spinner"><i></i></div>数据读取中</li>
+<% } else { %>
+	<div class="nctouch-norecord voucher">
+		<div class="norecord-ico"><i></i></div>
+		<dl>
+			<dt>您还没有相关的代金券</dt>
+			<dd>店铺代金券可享受商品折扣</dd>
+		</dl>
+	</div>
+<% } %>
+</script> 
+<script type="text/javascript" src="../../js/config.js"></script> 
+<script type="text/javascript" src="../../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script> 
+<script type="text/javascript" src="../../js/common.js"></script> 
+<script type="text/javascript" src="../../js/ncscroll-load.js"></script> 
+<script>
+	function showSpacing(){
+		$('.spacing-div').remove();
+		$('.invalid').first().before('<div class="spacing-div"><span>已失效的券</span></div>');
+	}
+	$(function(){
+		var key = getCookie('key');
+		if (!key) {
+			window.location.href = WapSiteUrl+'/tmpl/member/login.html';
+			return;
+		}
+		//渲染list
+		var load_class = new ncScrollLoad();
+		load_class.loadInit({
+			'url':ApiUrl + '/index.php?act=member_voucher&op=voucher_list',
+			'getparam':{'key':key},
+			'tmplid':'voucher-list-tmpl',
+			'containerobj':$("#voucher-list"),
+			'iIntervalId':true,
+			'callback':showSpacing,
+			'data':{WapSiteUrl:WapSiteUrl}
+		});
+	});
+</script>
+</body>
+</html>

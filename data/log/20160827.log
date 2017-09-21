@@ -1,0 +1,6 @@
+[2016-08-27 19:47:55] /index.php/ ( act=index&op=index ) 
+ERR: Db Error: La table 'ceshi2.33hao_p_xianshi_goods' n'existe pas
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1472298474' ) AND ( end_time > '1472298474' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2016-08-27 19:47:55] /index.php/ ( act=index&op=index ) 
+ERR: Db Error: La table 'ceshi2.33hao_web' n'existe pas
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  

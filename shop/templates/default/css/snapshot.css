@@ -1,0 +1,77 @@
+/* ================================ */
+/* Author:			33hao	    	*/
+/* Support Site:	www.33hao.com	*/
+/* Retrofit Date:	Aug-08-2016		*/
+/* ================================ */
+.wrapper { width: 1200px;}
+.public-nav-layout { width: 1200px; height: 0px;}
+.head-app,
+.public-nav-layout .wrapper { display: none;}
+.snapshot-goods-name { padding: 10px 0; overflow: hidden; border-bottom: solid 1px #E6E6E6;}
+.snapshot-goods-name em { float: left; width: 150px; }
+.snapshot-goods-name h1 { text-align: center; float: left; width: 700px; padding-right: 150px;}
+.snapshot-goods-name span { font-size: 12px; color: #999; font-weight: 600; line-height: 18px; background-color: #F5F5F5; border: solid 1px #E6E6E6; padding: 0 9px; display: inline-block; border-radius: 4px; margin-left: 6px;}
+.snapshot-goods-name h1 { font-size: 14px; font-weight: bold!important; color: #333; line-height: 24px; display: inline-block;}
+.ncs-detail { overflow: hidden;}
+.ncs-goods-picture { width: 300px; height: 300px; margin: 20px; float: left; overflow: hidden;}
+.ncs-goods-summary { float: left; width: 400px; margin-top: 20px;}
+.ncs-goods-summary dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; display: block; width: 100%; padding: 5px 0;}
+.ncs-goods-summary dt,
+.ncs-goods-summary dd { font-size: 12px; line-height: 30px; vertical-align: top; display: inline-block; *display: inline/*IE7*/; *zoom: 1/*IE7*/;}
+.ncs-goods-summary dt { width: 23%; text-align: right; padding-right: 2%;}
+.ncs-goods-summary dd { width: 75%;}
+.ncs-goods-summary .ncs-price em { font-size: 24px; color: #F32613;}
+.ncs-goods-summary .ncs-cti dd { font-size: 0; *word-spacing:-1px/*IE6、7*/;}
+.ncs-goods-summary .ncs-spec { background-color: #fff8f6; border: dashed 1px #f6ebe9;}
+.ncs-goods-summary .ncs-cti span { font-size: 12px; vertical-align: top; display: inline-block; *display: inline/*IE7*/; margin-right: 5px; *zoom: 1/*IE7*/;}
+.ncs-goods-summary .ncs-cti span img { width: 16px; height: 16px;}
+.ncs-goods-summary .snap { background: url(../images/member/order_snapshot.png) no-repeat 100% 100%; padding: 10px; border: dashed 1px #E9EEFF; margin-top: 10px;}
+.ncs-goods-summary .snap p { line-height: 20px; height: 20px; padding: 4px 0;}
+.ncs-goods-summary .snap p a { font-weight: 600; color: #005EA6;}
+/* ====================== */
+/* 店铺简介边栏 -> info.php */
+/* ====================== */
+.ncs-info { width: 210px; float: right; margin-top: 20px;}
+.ncs-info .title { background-color: #F5F5F5; padding: 8px 10px; border: solid 1px #E6E6E6;}
+.ncs-info .title h4 { font: 600 14px/20px "Microsoft Yahei"; color: #555;}
+.ncs-info .content { border: solid #E6E6E6; border-width: 0 1px 1px;}
+.ncs-info .content dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; display: block; padding: 4px 0;}
+.ncs-info .content dl dt { font-size: 12px; color: #666; vertical-align: top; letter-spacing: normal; word-spacing: normal; text-align: right; display: inline-block; *display: inline/*IE7*/; width: 68px; *zoom:1;}
+.ncs-info .content dl dd { font-size: 12px; color: #333; vertical-align: top; letter-spacing: normal; word-spacing: normal; white-space: nowrap; text-overflow: ellipsis; display: inline-block; *display: inline/*IE7*/; width: 130px; *width: 125px; overflow: hidden; zoom: 1;}
+.ncs-info .all-rate .rating { background: url(../images/2014grate.png) no-repeat 0 -18px ; vertical-align: middle; display: inline-block; *display: inline/*IE7*/; width: 79px; height: 17px; *zoom:1;}
+.ncs-info .all-rate .rating span { background: url(../images/2014grate.png) no-repeat 100% 0; display: block; height: 18px;}
+.ncs-info .all-rate em { color: #DA542E; font-weight: 600; vertical-align: middle; margin-right: 2px;}
+.ncs-info .content .detail-rate { clear: both;}
+.ncs-info .store-name { font-weight: 600; color: #555; height: 20px; padding: 6px 9px; border-bottom: solid 1px #E6E6E6;}
+
+.ncs-detail-rate { color: #999; width: 182px; padding: 5px; margin: 0 auto;}
+.ncs-detail-rate ul { font-size: 0; *word-spacing:-1px/*IE6、7*/; padding: 5px 0;}
+.ncs-detail-rate li { font-size: 12px; color: #333; vertical-align: top; text-align: center; display: inline-block; *display: inline/*IE7*/; width: 33.333%; height: 32px; *zoom: 1;}
+.ncs-detail-rate li h5 { color: #777; line-height: 16px; height: 16px;}
+.ncs-detail-rate li div { line-height: 16px; height: 16px; }
+.ncs-detail-rate .credit { color: #555; display: inline-block; width: 35px; margin-left: 4px;}
+.ncs-detail-rate li div i { background: url(../images/2014grate.png) no-repeat; vertical-align: middle; display: inline-block; width: 16px; height: 16px;}
+.ncs-detail-rate .high { color: #DA542E; }
+.ncs-detail-rate .high i { background-position: 0 -40px;}
+.ncs-detail-rate .equal { color: #DA542E; }
+.ncs-detail-rate .equal i { background-position: -32px -40px;}
+.ncs-detail-rate .low { color: #28B779; }
+.ncs-detail-rate .low i { background-position: -16px -40px;}
+.ncs-info .btns { font-size: 0; *word-spacing:-1px/*IE6、7*/; text-align: center; padding-bottom: 12px; border-bottom: solid 1px #E6E6E6;}
+.ncs-info .btns a { font-size: 12px; line-height: 20px; color: #333; background-color: #F5F5F5; vertical-align: top; text-align: center; display: inline-block; *display: inline/*IE7*/; height: 20px; padding: 3px 10px; border: solid 1px #CCC; *zoom: 1;}
+.ncs-info .btns a.goto { color: #FFF; background-color: #333; border-color: #333; margin-right: 10px;}
+.ncs-info .btns a span { line-height: 20px; color: #999; margin-left: 3px; }
+.ncs-info .btns a:hover { text-decoration: none;}
+.ncs-info .no-border { border: 0!important; padding-bottom: 0!important;}
+
+.ncs-goods-layout {}
+.ncs-goods-layout .title { height: 30px; border-bottom: solid 1px #E6E6E6;}
+.ncs-goods-layout .title span { font-size: 14px; font-weight: 600; line-height: 20px; background-color: #FFF; height: 20px; padding: 4px 19px 5px 19px; float: left; border-width: 2px 1px 0 1px; border-color: #F32613 #E6E6E6 transparent  #E6E6E6; border-style: solid;}
+
+.nc-goods-sort { font-size: 0; *word-spacing:-1px/*IE6、7*/; background-color: #FFF; border: solid #DDD; border-width: 0 1px 1px; padding:10px 0; margin-bottom: 10px;}
+.nc-goods-sort li { font-size: 12px; line-height: 20px; letter-spacing: normal; word-spacing: normal; text-overflow : ellipsis; white-space: nowrap; display: inline-block; width: 23%; padding: 0 0 0 2%; margin: 0; overflow: hidden;}
+.nc-goods-sort li { *display: inline; }
+.ncs-goods-info-content { padding-bottom: 23px;}
+.ncs-goods-info-content .top { padding: 9px; margin-bottom: 20px; border: solid #E6E6E6; border-width: 0 1px 1px;}
+.ncs-promotion { margin-bottom: 20px;}
+.ncs-promotion .ncs-goods-info-content { padding: 0; border: solid #E6E6E6; border-width: 0 1px 1px;}

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* ================================ */
+/* 触屏版购物车样式类型				*/
+/* ================================ */
+/* Author:			33h  ao	    	*/
+/* Support Site:	ww  w.33  hao.com	*/
+/* Retrofit Date:	Aug-08-2016		*/
+/* ================================ */
+
+/*F码*/
+#container-fcode { position: fixed; z-index: 999; top: 0; left: 0; right: 0; bottom: 0;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#BF000000', endColorstr='#BF000000');background:rgba(0,0,0,0.75);}
+#container-fcode .fcode-bg { position: absolute; z-index: auto; top: 50%; left: 50%; margin: -7rem auto auto -6rem; width: 12rem; height: 14rem; background-image: url(../images/fcode.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%;}
+#container-fcode .fcode-bg .con { display: block; padding: 3rem 1rem 0 1rem; text-align: center; color: #FFEA99;}
+#container-fcode .fcode-bg .con h3 { font-size: 0.72rem; line-height: 1.4rem; font-weight: 600; text-shadow: 0.05rem 0.05rem 0 rgba(71,4,5,0.50);}
+#container-fcode .fcode-bg .con h5 { font-size: 0.6rem; line-height: 0.9rem; text-shadow: 0.05rem 0.05rem 0 rgba(71,4,5,0.50);}
+#container-fcode .fcode-bg .con input[type="text"] { font-size: 0.8rem; line-height: 1.2rem; padding: 0.2rem; width: 9rem; height: 1.2rem; border: none;
+border-radius: 0.3rem; margin-top: 0.7rem; text-align: center;}
+#container-fcode .fcode-bg .con .submit { display: inline-block; background: #FFCE55; font-size: 0.8rem; line-height: 1.6rem; width: 7rem; height: 1.6rem; margin: 0.8rem auto 0 auto; border-radius: 0.4rem; color: #E9573E; font-weight: 600; box-shadow: 0 0.1rem 0 rgba(150,40,4,0.5);}
+#container-fcode.out {content: " animation: optionBlockOut 1s ease-in-out forwards; -webkit-animation:optionBlockOut 1s ease-in-out forwards;";}
+
+@keyframes optionBlockOut
+{
+from { opacity: 1;}
+to { opacity: 0; display: none;}
+}
+@-webkit-keyframes optionBlockOut
+{
+from { opacity: 1;}
+to { opacity: 0;  display: none;}
+}
+
+
+/*购物车*/
+#cart-list-wp { margin-bottom: 2.5rem;}
+.nctouch-cart-container { display: block; clear: both; background-color: #FFF; margin-bottom: 0.5rem; border: solid #EEE; border-width: 0.05rem;}
+.nctouch-cart-store { display: block; border-bottom: solid 0.05rem #EEE;}
+.nctouch-cart-store dt { position: relative; z-index: 1; display: block; height: 0.9rem; padding: 0.5rem; font-size: 0.7rem; line-height: 0.9rem;}
+.nctouch-cart-store dt .store-check { display: inline-block; vertical-align: top; margin-right: 0.2rem;}
+.nctouch-cart-store dt i.icon-store { display: inline-block; width: 0.8rem; height: 0.9rem; margin-right: 0.2rem; vertical-align: middle; background:url(../images/store_b.png) no-repeat 50% 50%; background-size: 90%; opacity: 0.8;}
+.nctouch-cart-store dt .handle { display: block; height: 0.9rem; padding: 0.5rem; position: absolute; z-index: 1; top: 0; right: 0; border-left: solid 0.05rem #EEE; background-color: #FCFCFC;}
+.nctouch-cart-store dt .handle a { color: #555; line-height: 0.9rem; font-size: 0.6rem;}
+.nctouch-cart-store dt .handle a i { display: inline-block; vertical-align: top; width: 0.9rem; height: 0.9rem; margin-right: 0.1rem;}
+.nctouch-cart-store dt .handle a.voucher i { background-image: url(../images/mcc_08_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 75%; opacity: 0.65;
+}
+
+.nctouch-cart-store dd { position: relative; z-index: 1; overflow: hidden; display: block; height: 0.9rem; padding: 0.2rem 0.5rem; font-size: 0.55rem; line-height: 0.9rem; border-top: solid 0.05rem #EEE; color: #555;}
+.nctouch-cart-store dd .arrow-down { position: absolute; z-index: 1; top: 0.15rem; right: 0.3rem; display: block; width: 0.8rem; height: 0.9rem; background-image: url(../images/arrow_down_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 50%; opacity: 0.5;}
+.nctouch-cart-store dd img { width: 0.6rem; height: 0.6rem; display: inline-block; vertical-align: middle; margin: 0 0.1rem;}
+.nctouch-cart-store dd em { position: absolute; z-index: 1; top: 0.3rem; left: 0.5rem; display: block; height: 0.5rem; padding: 0.1rem 0.2rem; background: #ED5564; font-size: 0.45rem; line-height: 0.5rem; color: #FFF; border-radius: 0.1rem;}
+.nctouch-cart-store dd span { display: block; clear: both; margin: 0 0.5rem 0 2rem;}
+.nctouch-cart-item { background-color: #FFF; border-bottom: solid 0.05rem #EEE;}
+.nctouch-cart-item li { display: block; position: relative; z-index: 1; margin-left: 0.5rem; padding: 0.5rem 0; border-bottom: solid #EEE 0.05rem;}
+.nctouch-cart-item li:last-child { border: none;}
+.nctouch-cart-item li .goods-check { position: absolute; top: 1.2rem;}
+.nctouch-cart-item li .goods-pic { display: block; width: 2.7rem; height: 2.7rem; padding: 0.2rem; position: absolute; z-index: 1; top: 0.5rem; left: 1.1rem; border: solid 0.05rem #EEE; border-radius: 0.2rem}
+.nctouch-cart-item li .goods-pic a { display: block; width: 100%; height: 100%;}
+.nctouch-cart-item li .goods-pic a img { width: 100%; height: 100%; border-radius: 0.2rem}
+.nctouch-cart-item li .goods-info { display: block; vertical-align: top; height: 2.2rem; margin: 0 2rem 0 4.5rem; position: relative; z-index: 1;}
+.nctouch-cart-item li .goods-info dt.goods-name { display: block;}
+.nctouch-cart-item li .goods-info dt.goods-name a { display: block; height: 1.4rem; font-size: 0.6rem; color: #111; line-height: 0.7rem; overflow: hidden;}
+.nctouch-cart-item li .goods-info dd.goods-type { overflow: hidden; white-space: nowrap; width: 70%; height: 0.9rem; font-size: 0.45rem; line-height: 0.9rem; color: #999; text-overflow: ellipsis;}
+.nctouch-cart-item li .goods-del { display: block; position: absolute; z-index: 1; top: 0.3rem; right: 0.5rem; width: 1rem; height: 1rem; }
+.nctouch-cart-item li .goods-del a { display: block;  width: 100%; height: 100%; background-image: url(../images/del_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; opacity: 0.4;}
+.nctouch-cart-item li .goods-subtotal { display: block; height: 1rem; margin: 0 0.5rem 0 4.5rem; line-height: 1rem; font-size: 0.6rem; position: relative; z-index: 1;}
+.nctouch-cart-item li .goods-subtotal .goods-price { color: #DB4453; font-size: 0.55rem; font-weight: 600;}
+.nctouch-cart-item li .goods-subtotal .goods-price em { font-size: 0.6rem;}
+.nctouch-cart-item li .goods-subtotal .goods-sale { display: inline-block; vertical-align: top; margin-right: 0.1rem;}
+.nctouch-cart-item li .goods-subtotal .goods-sale em {  display: inline-block; vertical-align: top; height: 0.7rem; padding: 0 0.1rem; margin-top: 0.1rem; font-size: 0.45rem; color: #FFF; line-height: 0.7rem; background-color: #ED5564; border-radius: 0.15rem;}
+.nctouch-cart-item li .goods-subtotal .goods-sale em i { display: inline-block; vertical-align: middle; margin-right: 0.1rem; width: 0.6rem; height: 0.6rem; background: #ED5564 url(../images/mobile_w.png) no-repeat 50% 50%; background-size: 80%; }
+.nctouch-cart-item li .value-box { position: absolute; z-index:1; bottom: 0; right: 0; }
+.nctouch-cart-item li .goods-num { font-size: 0.5rem; line-height: 1rem; position: absolute; z-index:1; top: 2.7rem; right: 1rem; }
+.nctouch-cart-item li .goods-num em { font-size: 0.6rem; font-weight: 600; margin: 0 0.2rem;}
+.nctouch-cart-item li .goods-gift { display: block; clear: both; padding : 0.2rem; margin: 0.4rem 0.5rem 0 0; border: dashed 1px #EEE; background-color: #FCFCFC;}
+.nctouch-cart-item li .goods-gift span { display: block; font-size: 0.55rem; line-height: 0.9rem; height: 0.9rem; border-bottom: solid 0.05rem #EEE; padding-bottom: 0.2rem; margin-bottom: 0.2rem; color: #888; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.nctouch-cart-item li .goods-gift span:last-child { border: none; margin-bottom: 0; padding-bottom: 0;}
+.nctouch-cart-item li .goods-gift span em { display: inline-block; height: 0.5rem; vertical-align: middle; padding: 0.1rem 0.2rem; margin-right: 0.2rem; background: #BBB; font-size: 0.45rem; line-height: 0.5rem; color: #FFF; border-radius: 0.1rem;}
+
+.nctouch-cart-item .buy-item .goods-pic { left: 0;}
+.nctouch-cart-item .buy-item .goods-info { margin: 0 0.5rem 0 3.5rem;}
+.nctouch-cart-item .buy-item .goods-subtotal { margin: 0 0.5rem 0 3.5rem;}
+.nctouch-cart-item .buy-item .notransport { position: absolute; z-index: 3; top: 0; left: -0.5rem; right: 0; bottom: 0; display: none; text-align: center; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#E5F5F5F5', endColorstr='#E5F5F5F5');background:rgba(245,245,245,0.9);}
+.nctouch-cart-item .buy-item .notransport p { margin-top: 1.5rem; font-size: 0.7rem; line-height: 1rem; color: #Ed5564;}
+
+.nctouch-cart-bottom { position: fixed; z-index: 1; top: auto; left: 0; right: 0; bottom: 0; height: 2rem; background-color: rgba(255,255,255,0.85); border-top: solid 0.05rem #EEE;}
+.nctouch-cart-bottom .all-check { position: absolute; z-index: 1; top: 0.4rem; left: 0.5rem;}
+.nctouch-cart-bottom .total { display: block; float: left; text-align: right; width: 75%;}
+.nctouch-cart-bottom .total-money { height: 1rem; margin-right: 1rem; padding: 0.5rem 0; font-size: 0; line-height: 1rem;}
+.nctouch-cart-bottom .total-money dt { display: inline-block; font-size: 0.6rem;}
+.nctouch-cart-bottom .total-money dd { display: inline-block; font-size: 0.55rem; color: #DB4453; font-weight: 600;}
+.nctouch-cart-bottom .total-money dd em { font-size: 0.9rem;}
+.nctouch-cart-bottom .check-out { display: block; float: right; width: 25%; height: 2rem; background-color: #BBB;}
+.nctouch-cart-bottom .check-out.ok { background-color: #ED5564;}
+.nctouch-cart-bottom .check-out a { display: block; text-align: center; font-size: 0.8rem; color: #FFF; line-height: 2rem;}
+
+.nctouch-cart-bottom.no-login { height: 5rem;}
+.nctouch-cart-bottom.no-login .cart-nologin-tip { text-align: center; padding: 0.8rem; font-size: 0.6rem; line-height: 1rem; color: #ED5564;}
+.nctouch-cart-bottom.no-login .cart-nologin-btn { display: block; text-align: center;}
+.nctouch-cart-bottom.no-login .cart-nologin-btn .btn { padding: 0.2rem 0.8rem;}
+
+
+.nctouch-cart-block { background: #FFF; display: block;}
+.nctouch-cart-block a { display: block; overflow: hidden;}
+.nctouch-cart-block i.icon-arrow { position: absolute; z-index: 1; top: 50%; right: 0.5rem; display: block; width: 0.5rem; height: 0.5rem; margin-top: -0.25rem; background-image: url(../images/arrow_right_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%; opacity: 0.5; }
+.nctouch-cart-block h3 { position: absolute; z-index: 1; top: 0.4rem; left: 0.5rem; display: block; width: 5rem; height: 1rem; font-size: 0.7rem; line-height: 1rem; color: #555;}
+.nctouch-cart-block h3 i { display: inline-block; vertical-align: middle; width: 0.9rem; height: 0.9rem; margin-right: 0.1rem; background-position: 50% 50%; background-repeat: no-repeat; background-size: 70%; opacity: 0.7;}
+.nctouch-cart-block h3 i.pay { background-image: url(../images/mcc_01.png);}
+.nctouch-cart-block h3 i.invoice { background-image: url(../images/mcc_08_b.png)}
+.nctouch-cart-block h3 i.mobile { background-image: url(../images/mobile_b.png);}
+.nctouch-cart-block .current-con { display: block; margin: 0 1.5rem 0 6rem; padding: 0.5rem 0; text-align: right; font-size: 0.6rem; color: #333; font-weight: 600;}
+.nctouch-cart-block .tip-con { display: block; margin: 0 0.5rem 0 5rem; padding: 0.5rem 0; text-align: right; font-size: 0.5rem; color: #ED5564; line-height: 0.9rem;}
+.nctouch-cart-block .inp-tel { display: block; width: 80%; height: 1.2rem; padding: 0.2rem; margin: 0.1rem auto 0 auto; border: solid #ED5564 0.05rem; border-radius: 0.2rem; font-size: 0.8rem; text-align: center; line-height: 1.2rem; background-color: #FEF6F7; color: #000;}
+
+
+/*购物车默认收货人地址*/
+.nctouch-cart-add-default { position: relative; z-index: 1; width: 100%;}
+.nctouch-cart-add-default a { color: #555;}
+.nctouch-cart-add-default i.icon-add { position: absolute; z-index: 1; top: 0.5rem; left: 0.5rem; display: block; width: 0.8rem; height: 0.9rem; background-image: url(../images/location_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%; }
+.nctouch-cart-add-default dl { margin: 0 0 0 1.6rem; padding: 0.5rem 0;}
+.nctouch-cart-add-default dt { display: block; height: 0.9rem; font-size: 0.7rem; line-height: 0.9rem;}
+.nctouch-cart-add-default dt span { margin-left: 0.3rem; font-weight: 600;}
+.nctouch-cart-add-default dd { display: block; min-height: 0.9rem; max-height: 1.6rem; font-size: 0.6rem; line-height: 0.9rem;}
+
+/*购物车选择地址*/
+.nctouch-cart-add-list { background: #FFF;}
+.nctouch-cart-add-list li { position: relative; z-index: 1; display: block; border-bottom: solid #EEE 0.05rem;}
+.nctouch-cart-add-list li i { position: absolute; z-index: 1; top: 0.8rem; left: 0.5rem; display: none; width: 0.7rem; height: 0.7rem; background-image: url(../images/ok.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%;}
+.nctouch-cart-add-list li.selected i { display: block;}
+.nctouch-cart-add-list dl { margin: 0 0 0 0.5rem; padding: 0.5rem 0; color: #666;}
+.nctouch-cart-add-list li.selected dl { margin-left: 1.8rem}
+.nctouch-cart-add-list dt { display: block; height: 0.9rem; margin-bottom: 0.2rem; font-size: 0.6rem; line-height: 0.9rem;}
+.nctouch-cart-add-list dt span { margin-right: 0.3rem; font-size: 0.7rem; color: #111;}
+.nctouch-cart-add-list dt span:last-child { font-weight: 600;}
+.nctouch-cart-add-list dt sub { display: inline-block; background-color: #DB4453; font-size: 0.45rem; line-height: 0.6rem; padding: 0 0.1rem; margin-left: 0.1rem; border-radius: 0.1rem; color: #FFF;}
+.nctouch-cart-add-list dd { display: block; min-height: 0.7rem; max-height: 1.4rem; font-size: 0.55rem; line-height: 0.7rem;}
+
+.nctouch-cart-subtotal {}
+.nctouch-cart-subtotal dl { position: relative; z-index: 1; height: 1rem; padding: 0.4rem 0 0; font-size: 0;}
+.nctouch-cart-subtotal dt { position: absolute; z-index: 1; top: 0.4rem; left: 0.4rem; display: block; width: 50%; height: 1rem; font-size: 0.6rem; line-height: 1rem;}
+.nctouch-cart-subtotal dd { height: 1rem; margin: 0 0.5rem 0 50%; text-align: right; font-size: 0.6rem; line-height: 1rem;}
+.nctouch-cart-subtotal .message { position: relative; z-index: 1; display: block; height: 1.6rem; padding-top: 0.4rem;}
+.nctouch-cart-subtotal .message input[type="text"] { display: block; width: 91%; height: 0.9rem; padding: 2%; margin: 0 2.5%; background-color: #F0F0F0; border: none; border-radius: 0.2rem; line-height: 0.9rem; font-size: 0.6rem;}
+.nctouch-cart-subtotal .store-total { padding: 0.5rem; text-align: right; font-size: 0.6rem; line-height: 0.9rem;}
+.nctouch-cart-subtotal .store-total span { font-size: 0.45rem; color: #DB4453;}
+.nctouch-cart-subtotal .store-total span em { font-size: 0.6rem; font-weight: 600;}
+
+.nctouch-cart-num { display: block; padding: 0.5rem 0; text-align: center; font-size: 0.6rem; color: #000; line-height: 1rem;}
+.nctouch-cart-num em { font-size: 1rem; color: #DB4453; font-weight: 600; display: inline-block; vertical-align: sub; margin: 0 0.2rem; }
+.nctouch-inp-cart ul { background-color: transparent;}
+.nctouch-inp-cart ul li { height: auto; margin: 0; background-color: transparent;}
+.nctouch-inp-cart ul li .input-box { margin: 0;}
+.nctouch-inp-cart ul li .input-box p { font-size: 0.55rem; position: absolute; z-index: 1; top: 0.8rem; right: 0.5rem; color: #555;}
+.nctouch-inp-cart ul li .input-box p em { font-size: 0.6rem; font-weight: 600; color: #000;}
+.nctouch-inp-cart ul li .input-box .txt { margin-left: 0.5rem;}
+.nctouch-inp-cart ul li .input-box .inp { width: 45%; background-color: #F5F5F5; padding: 0.25rem 0.5rem; margin: 0.25rem 0.5rem 0 0.25rem; border-radius: 0.2rem;}
+.nctouch-inp-cart ul li .input-box .select { float: right; width: auto; text-align: right; margin-right: 1.1rem;}
+.nctouch-inp-cart ul li .input-box .arrow-down { right: 0.35rem;}
+.nctouch-inp-cart .pay-btn { display: block; margin: 0.5rem 0 1rem 0;}
+
+/*购物车使用红包*/
+#rptVessel .input-box { display: block; height: 1.95rem; margin: 0 0 0 0.5rem; position: relative; z-index: 1; font-size: 0.6rem; line-height: 1.95rem;}
+#rptVessel .input-box input[type="checkbox"] { display: none; }
+#rptVessel .input-box p { position: absolute; z-index: 1; top: 0.5rem; right: 0.5rem; display: block; height: 0.9rem; font-size: 0.6rem; color: #000; line-height: 0.9rem;}
+
+/*支付密码帮助*/
+.input-box-help { position: absolute; z-index: 1; top: 0.4rem; right: 0.6rem; display: block; width: 2.2rem; height: 1.5rem; text-align: center;font-size: 0.55rem; color: #000;}
+.input-box-help i { display: block; vertical-align: top; width: 0.6rem; height: 0.6rem; margin: 0 auto 0.1rem auto; text-align: center; font-size: 0.6rem; line-height: 0.6rem; color: #BBB; font-weight: bold; border: solid 0.05rem #CCC; border-radius: 100%;}
+
+/*在线支付方式选择*/
+.nctouch-pay { display: block;}
+.nctouch-pay .spacing-div { position: relative; z-index: 1; display: block; height: 1rem; margin: 0 0.5rem 1rem 0.5rem; border-bottom: solid #EEE 0.05rem;}
+.nctouch-pay .spacing-div span { position: absolute; z-index: 1; bottom: -0.3rem; left: 50%; display: block; width: 5rem; margin-left: -2.5rem; text-align: center; font-size: 0.55rem; line-height: 0.6rem; height: 0.6rem; background-color: #FFF; color: #888;}
+.nctouch-pay .pay-sel { display: block; font-size: 0; overflow: hidden;}
+.nctouch-pay label { float: left; width: 50%; height: 2rem; padding: 0.25rem 0; text-align: center; border: none !important;}
+.nctouch-pay label input[type="radio"] { display: none;}
+.nctouch-pay label span { display: inline-block; width: 5rem; height: 1.5rem; margin: 0 auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; opacity: 0.5;}
+.nctouch-pay label.checked span { -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); filter: gray; opacity: 1;}
+.nctouch-pay label span.alipay { background-image: url(../images/alipay.jpg);}
+.nctouch-pay label span.wxpay { background-image: url(../images/wxpay.jpg);}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+<title>账户余额</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css">
+<link rel="stylesheet" type="text/css" href="../../css/nctouch_member.css">
+</head>
+<body>
+<header id="header" class="fixed">
+  <div class="header-wrap">
+    <div class="header-l"><a href="member.html"><i class="back"></i></a></div>
+    <div class="header-title">
+      <h1>预存款充值</h1>
+    </div>
+    <div class="header-r"> <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a> </div>
+  </div>
+  <div class="nctouch-nav-layout">
+    <div class="nctouch-nav-menu"> <span class="arrow"></span>
+      <ul>
+        <li><a href="../../index.html"><i class="home"></i>首页</a></li>
+        <li><a href="../search.html"><i class="search"></i>搜索</a></li>
+        <li><a href="../product_first_categroy.html"><i class="categroy"></i>分类</a></li>
+        <li><a href="javascript:void(0);"><i class="message"></i>消息<sup></sup></a></li>
+        <li><a href="../cart_list.html"><i class="cart"></i>购物车<sup></sup></a></li>
+        <li><a href="../member/member.html"><i class="member"></i>我的商城</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="nctouch-main-layout">
+  <div id="pd_count" class="nctouch-asset-info"></div>
+  <div id="fixed_nav" class="nctouch-single-nav">
+    <ul id="filtrate_ul" class="w33h">
+      <li><a href="predepositlog_list.html">账户余额</a></li>
+      <li class="selected"><a href="javascript:void(0);">充值明细</a></li>
+      <li><a href="pdcashlist.html">余额提现</a></li>
+    </ul>
+  </div>
+  <ul id="pdrlist" class="nctouch-log-list">
+  </ul>
+</div>
+<div class="fix-block-r"> <a href="javascript:void(0);" class="gotop-btn gotop hide" id="goTopBtn"><i></i></a> </div>
+<footer id="footer" class="bottom"></footer>
+<script type="text/html" id="pd_count_model">
+	<div class="container pre">
+		<i class="icon"></i>
+		    <dl>
+				<dt>预存款余额</dt>
+				<dd>￥<em><%=predepoit;%></em></dd>
+			</dl>
+		</div>
+</script> 
+<script type="text/html" id="list_model">
+        <% if(list.length >0){%>
+        <% for (var k in list) { var v = list[k]; %>
+            <li>
+				<dl>
+					<dt><i></i>
+                        <% if(v.pdr_payment_state == 1){%>
+                            <%=v.pdr_payment_name %>：
+                        <% } %>
+                        <%=v.pdr_payment_state_text %></span></dt>
+					<dd>充值单号：<%=v.pdr_sn %></dd>
+				</dl>
+                <time class="date"><%=v.pdr_add_time_text %></time>
+                <div class="money add"><%=v.pdr_amount %></div>
+            </li>
+        <%}%>
+        <li class="loading"><div class="spinner"><i></i></div>数据读取中</li>
+        <%}else {%>
+        <div class="nctouch-norecord pdre">
+            <div class="norecord-ico"><i></i></div>
+            <dl>
+                <dt>您尚未充值过预存款</dt>
+				<dd>使用商城预存款结算更方便</dd>
+            </dl>
+        </div>
+        <%}%>
+    </script> 
+<script type="text/javascript" src="../../js/config.js"></script> 
+<script type="text/javascript" src="../../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script> 
+<script type="text/javascript" src="../../js/common.js"></script> 
+<script type="text/javascript" src="../../js/zepto.waypoints.js"></script> 
+<script type="text/javascript" src="../../js/ncscroll-load.js"></script> 
+<script>
+    $(function(){
+        var key = getCookie('key');
+        if (!key) {
+            window.location.href = WapSiteUrl+'/tmpl/member/login.html';
+            return;
+        }
+        //渲染list
+        var load_class = new ncScrollLoad();
+        load_class.loadInit({
+            'url':ApiUrl + '/index.php?act=member_fund&op=pdrechargelist',
+            'getparam':{'key':key},
+            'tmplid':'list_model',
+            'containerobj':$("#pdrlist"),
+            'iIntervalId':true
+        });
+        //获取预存款余额
+        $.getJSON(ApiUrl + '/index.php?act=member_index&op=my_asset', {'key':key,'fields':'predepoit'}, function(result){
+            var html = template.render('pd_count_model', result.datas);
+            $("#pd_count").html(html);
+
+            $('#fixed_nav').waypoint(function() {
+                $('#fixed_nav').toggleClass('fixed');
+            }, {
+                offset: '50'
+            });
+        });
+    });
+</script>
+</body>
+</html>

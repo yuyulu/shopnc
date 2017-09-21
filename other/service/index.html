@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>七大服务 无忧购物</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/Features.css">
+<style>
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fullPage.min.js" type="text/javascript"></script>
+<script>
+
+$(function(){
+	if($.browser.msie && $.browser.version < 10/* || $.browser.webkit*/){
+		$('body').addClass('ltie8');
+	}
+	
+	$.fn.fullpage({
+		verticalCentered: false,
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+		navigation: true,
+		navigationTooltips: ['七大服务 无忧购物','实体门店，信誉有保障', '无线上网，wifi全覆盖', '扫码购物，比价更便捷', '售后无忧，致电就维修', '七天退换，不用给理由', '送货上门，可上门安装', '会员特权，福利享不停']
+	});
+	var chang =['七大服务 无忧购物','实体门店 ，信誉有保障', '无线上网，wifi全覆盖', '扫码购物，比价更便捷', '售后无忧，致电就维修', '七天退换，不用给理由', '送货上门，可上门安装', '会员特权，福利享不停'];
+	for(var i = 0;i<chang.length;i++)
+	{ 
+		$("#fullPage-nav li a").eq(i).text(chang[i]);
+		
+	};
+	$(".Features").height(window.document.body.clientHeight);
+	$("body").height(window.document.body.clientHeight);
+});
+</script>
+</head>
+<body style=" overflow:auto; overflow-y:hidden;">
+
+<div class="section section1">
+    <div class="Features">
+    	<div class="bg11"></div>
+        <div class="bg12"></div>
+        <div class="bg13"></div>
+        <div class="hgroup"></div>
+    </div>
+</div>
+<div class="section section2">
+    <div class="Features">
+    	<div class="bg21"></div>
+        <div class="bg22"></div>
+        <div class="bg23"></div>
+        <div class="bg24"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p1">您还为担心购买到有质量的商品而无法退货、换货吗？<br/>您还怕实体店价格太贵而不敢购买吗？</p>
+    </div>
+</div>
+<div class="section section3">
+	<div class="Features">
+        <div class="bg31"></div>
+        <div class="bg32"></div>
+        <div class="bg33"></div>
+        <div class="bg34"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p3">佰零伍商城各体验店免费WIFI全服务<br/>让您随时随地享受网络的便捷</p>
+    </div>
+</div>
+<div class="section section4">
+	<div class="Features">
+        <div class="bg41"></div>
+        <div class="bg42"></div>
+        <div class="bg43"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p1">不用带钱包一样购物，现金购物已经out</p>
+	</div>
+</div>
+<div class="section section5">
+	<div class="Features">
+        <div class="bg51"></div>
+        <div class="bg52"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p3">遇到问题一个电话轻松搞定0759-8810900<br/>其它网上商城维修时间长、快递时间长<br/>并且还需买家付来回快递费<br/>在快递过程中还有可能被掉包</p>
+	</div>
+</div>
+<div class="section section6">
+	<div class="Features">
+        <div class="bg61"></div>
+        <div class="bg62"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p3">小明在某商城购物出现问题<br/>无法在线下售后服务或售后时间长<br/>网上其它商城销售的商品都属于网上专供品</p>
+	</div>
+</div>
+<div class="section section7">
+	
+	<div class="Features">
+        <div class="bg71"></div>
+        <div class="bg72"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p3">轻松点击鼠标，只需在家等待或上佰零伍商城各体验店自提即可收您称心如意的宝贝哦！，还可以选择上门安装服务呢！<br/>亲！</p>
+	</div>
+</div>
+<div class="section section8">
+	<div class="Features">
+        <div class="bg81"></div>
+        <div class="bg82"></div>
+        <div class="bg83"></div>
+        <strong></strong>
+        <h3></h3>
+        <p class="p3">积分抵现、积分兑换礼品、生日礼金、<br/>优先抢购、免费保养、免费送货等多重特权</p>
+	</div>
+</div>
+
+
+</body>
+</html>

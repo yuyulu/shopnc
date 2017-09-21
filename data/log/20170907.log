@@ -1,0 +1,849 @@
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777151' ) AND ( end_time > '1504777151' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777151' ) AND ( end_time > '1504777151' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:39:11] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777152' ) AND ( end_time > '1504777152' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777152' ) AND ( end_time > '1504777152' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:39:12] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777205' ) AND ( end_time > '1504777205' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777205' ) AND ( end_time > '1504777205' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777205' ) AND ( end_time > '1504777205' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777205' ) AND ( end_time > '1504777205' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777206' ) AND ( end_time > '1504777206' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777206' ) AND ( end_time > '1504777206' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:06] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777207' ) AND ( end_time > '1504777207' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777207' ) AND ( end_time > '1504777207' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777207' ) AND ( end_time > '1504777207' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777207' ) AND ( end_time > '1504777207' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:07] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777208' ) AND ( end_time > '1504777208' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777208' ) AND ( end_time > '1504777208' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:40:08] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777323' ) AND ( end_time > '1504777323' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777323' ) AND ( end_time > '1504777323' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:03] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777325' ) AND ( end_time > '1504777325' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777325' ) AND ( end_time > '1504777325' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:05] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:17] /index.php?act=category&op=index ( act=category&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:22] /index.php?act=brand&op=index ( act=brand&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:22] /index.php?act=brand&op=index ( act=brand&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT * FROM `33hao_brand` WHERE ( brand_apply = '1' ) ORDER BY brand_sort asc LIMIT 1000  
+[2017-09-07 17:42:25] /index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:25] /index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy_price_range' doesn't exist
+SELECT * FROM `33hao_groupbuy_price_range` ORDER BY range_start LIMIT 30  
+[2017-09-07 17:42:25] http://shopnc.dev/shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1504777345' ) AND ( end_time > '1504777345' ) LIMIT 1  
+[2017-09-07 17:42:25] http://shopnc.dev/shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1504777345' ) AND ( end_time > '1504777345' ) ORDER BY state asc LIMIT 0,9  
+[2017-09-07 17:42:25] http://shopnc.dev/shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1504777345' ) AND ( end_time > '1504777345' ) LIMIT 1  
+[2017-09-07 17:42:25] http://shopnc.dev/shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1504777345' ) AND ( end_time > '1504777345' ) ORDER BY state asc LIMIT 0,9  
+[2017-09-07 17:42:27] /index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:27] http://shopnc.dev/shop/index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1504777346' ) AND ( end_time > '1504777346' ) LIMIT 1  
+[2017-09-07 17:42:27] http://shopnc.dev/shop/index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time <= '1504777346' ) AND ( end_time > '1504777346' ) ORDER BY xianshi_goods_id desc LIMIT 0,16  
+[2017-09-07 17:42:27] http://shopnc.dev/shop/index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods' doesn't exist
+SELECT goods_id,gc_id_1,evaluation_good_star,store_id,store_name FROM `33hao_goods` WHERE ( goods_id IN('') ) AND ( goods_state = '1' ) AND ( goods_verify = '1' ) LIMIT 16  
+[2017-09-07 17:42:27] http://shopnc.dev/shop/index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` WHERE ( geval_goodsid IN('') ) ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:27] http://shopnc.dev/shop/index.php?act=promotion&op=index ( act=promotion&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:27] /index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:27] /index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_voucher_template' doesn't exist
+SELECT * FROM `33hao_voucher_template` WHERE ( voucher_t_state = '1' ) AND ( voucher_t_gettype = '1' ) AND ( voucher_t_end_date > '1504777347' ) ORDER BY voucher_t_recommend desc,voucher_t_id desc LIMIT 6  
+[2017-09-07 17:42:27] /index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_store_class' doesn't exist
+SELECT * FROM `33hao_store_class` ORDER BY sc_sort asc,sc_id asc 
+[2017-09-07 17:42:27] /index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_points_goods' doesn't exist
+SELECT * FROM `33hao_points_goods` WHERE ( pgoods_show = '1' ) AND ( pgoods_state = '0' ) AND ( pgoods_commend = '1' ) ORDER BY pgoods_sort asc,pgoods_id desc LIMIT 10  
+[2017-09-07 17:42:27] /index.php?act=pointshop&op=index ( act=pointshop&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_redpacket_template' doesn't exist
+SELECT * FROM `33hao_redpacket_template` WHERE ( rpacket_t_state = '1' ) AND ( rpacket_t_gettype = '1' ) AND ( rpacket_t_end_date >= '1504777347' ) ORDER BY rpacket_t_recommend desc,rpacket_t_id desc LIMIT 10  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777348' ) AND ( end_time > '1504777348' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777348' ) AND ( end_time > '1504777348' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777352' ) AND ( end_time > '1504777352' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777352' ) AND ( end_time > '1504777352' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:32] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777366' ) AND ( end_time > '1504777366' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777366' ) AND ( end_time > '1504777366' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:46] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777367' ) AND ( end_time > '1504777367' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:47] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777368' ) AND ( end_time > '1504777368' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:42:48] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777404' ) AND ( end_time > '1504777404' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777404' ) AND ( end_time > '1504777404' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:43:24] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777405' ) AND ( end_time > '1504777405' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777405' ) AND ( end_time > '1504777405' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:43:25] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777480' ) AND ( end_time > '1504777480' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777480' ) AND ( end_time > '1504777480' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:44:40] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777481' ) AND ( end_time > '1504777481' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777481' ) AND ( end_time > '1504777481' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777481' ) AND ( end_time > '1504777481' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777481' ) AND ( end_time > '1504777481' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:44:41] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:44:44] /shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777501' ) AND ( end_time > '1504777501' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777501' ) AND ( end_time > '1504777501' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777501' ) AND ( end_time > '1504777501' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777501' ) AND ( end_time > '1504777501' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:45:01] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777502' ) AND ( end_time > '1504777502' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777502' ) AND ( end_time > '1504777502' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:45:02] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:45:19] /shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:32] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2017-09-07 17:45:37] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2017-09-07 17:45:42] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:42] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:42] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_category' doesn't exist
+SELECT * FROM `33hao_mb_category` as `mb_category`   order by gc_id
+[2017-09-07 17:45:42] /mobile/index.php?act=brand&op=recommend_list ( act=brand&op=recommend_list ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 1000  
+[2017-09-07 17:45:43] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2017-09-07 17:45:45] /mobile/index.php?act=brand&op=recommend_list ( act=brand&op=recommend_list ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 1000  
+[2017-09-07 17:45:45] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:45] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:45:45] /mobile/index.php?act=goods_class ( act=goods_class&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_category' doesn't exist
+SELECT * FROM `33hao_mb_category` as `mb_category`   order by gc_id
+[2017-09-07 17:45:46] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2017-09-07 17:45:56] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777574' ) AND ( end_time > '1504777574' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777574' ) AND ( end_time > '1504777574' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:46:14] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777616' ) AND ( end_time > '1504777616' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777616' ) AND ( end_time > '1504777616' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:46:56] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1504777616' ) AND ( end_time > '1504777616' ) ORDER BY recommended desc LIMIT 4  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1504777616' ) AND ( end_time > '1504777616' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2017-09-07 17:46:57] / ( act=index&op=index ) 
+ERR: Db Error: Table 'ceshi.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2017-09-07 17:47:13] /shop/index.php?act=index&op=viewed_info ( act=index&op=viewed_info ) 
+ERR: Db Error: Table 'ceshi.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2017-09-07 18:06:12] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Duplicate entry '21307064335' for key 'PRIMARY'
+INSERT  INTO `33hao_lock` (pid,pvalue,expiretime) VALUES ('21307064335','1','1504779372')
